@@ -10,6 +10,12 @@ export default {
         'web-gray': '#6D758F',
         'web-white': '#F3F3F3',
         'web-pure': '#FFFFFF',
+      },
+      backgroundImage: {
+        'hero': "url('./assets/images/hero.jpg')",
+      },
+      spacing: {
+        'web-screen': '70rem',
       }
     },
   },
