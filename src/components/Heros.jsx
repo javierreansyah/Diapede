@@ -14,7 +14,7 @@ const Heros = () => {
         <div class="mx-44 pt-80 pb-60">
           <div>
             <h1 class='left font-extrabold text-7xl text-web-dark'>
-              Diagnosis Dini
+              Deteksi Dini
             </h1>
             <h1 class='left font-extrabold text-7xl text-web-dark'>
               Diabetes
