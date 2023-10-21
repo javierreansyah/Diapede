@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import Javier from '../assets/images/javier.jpg'
 import Fauzi from '../assets/images/fauzi.jpg'
 import Herdi from '../assets/images/herdi.jpg'
@@ -20,9 +22,9 @@ const Heros = () => {
             <p class='my-5 left font-normal text-base text-web-dark'>
               Segera cek sekarang
             </p>
-            <a href='' class='p-3 font-semibold rounded-lg bg-web-cyan text-web-pure hover:text-gray-100 text-base shadow-sm'>
+            <Link to='/checkup' class='p-3 font-semibold rounded-lg bg-web-cyan text-web-pure hover:text-gray-100 text-base shadow-sm'>
               Cek Sekarang
-            </a>
+            </Link>
           </div>
         </div>
         <div class=''>
