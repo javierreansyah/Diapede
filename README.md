@@ -1,8 +1,9 @@
-# React + Vite
+# Diapede (Front End Repository) (Ongoing Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Diapede (Diabetes Helper Detection) is a web application designed to provide early risk detection for diabetes. This project aims to help users with valuable insights into their health, helping them detect potential diabetes risks at an early stage.
 
-Currently, two official plugins are available:
+# Front End Tech Stack
+- HTML, CSS, JavaScript
+- Vite, React, Tailwind
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
