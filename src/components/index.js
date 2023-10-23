@@ -4,10 +4,4 @@ import Footer from "./Footer";
 import Checkup from "./Checkup";
 import Contact from "./Contact";
 
-export {
-  Navbar,
-  Heros,
-  Footer,
-  Checkup,
-  Contact,
-}
+export { Navbar, Heros, Footer, Checkup, Contact };

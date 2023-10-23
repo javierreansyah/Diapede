@@ -1,29 +1,41 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div class=' shadow-lg fixed top-0 bg-white w-full z-50'>
-      <div class='flex justify-center flex-shrink-0'>
-        <nav class='h-24 w-full mx-44 flex justify-between items-center'>
-          <Link to='/' class='font-extrabold text-web-dark hover:text-gray-400 text-3xl'>
+    <div class="fixed top-0 z-50 w-full bg-white shadow-lg">
+      <div class="flex flex-shrink-0 justify-center">
+        <nav class="mx-44 flex h-24 w-full items-center justify-between">
+          <Link
+            to="/"
+            class="text-3xl font-extrabold text-web-dark hover:text-gray-400"
+          >
             Diapede
           </Link>
-          <div class=''>
-            <Link to='/' class='mx-3 font-regular text-web-dark hover:text-gray-400 text-base'>
+          <div class="">
+            <Link
+              to="/"
+              class="font-regular mx-3 text-base text-web-dark hover:text-gray-400"
+            >
               Home
             </Link>
-            <Link to='/contact' class='mx-3 font-regular text-web-dark hover:text-gray-400 text-base'>
+            <Link
+              to="/contact"
+              class="font-regular mx-3 text-base text-web-dark hover:text-gray-400"
+            >
               Kontak Kami
             </Link>
-            <Link to='/checkup' class='mx-3 p-3 font-semibold rounded-lg bg-web-cyan text-web-pure hover:text-gray-100 text-base shadow-sm'>
+            <Link
+              to="/checkup"
+              class="mx-3 rounded-lg bg-web-cyan p-3 text-base font-semibold text-web-pure shadow-sm hover:text-gray-100"
+            >
               Cek Sekarang
             </Link>
           </div>
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

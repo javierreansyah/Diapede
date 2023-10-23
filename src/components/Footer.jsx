@@ -1,20 +1,18 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div class='shadow-lg top-0 bg-white w-full z-50'>
-      <div class='flex justify-center flex-shrink-0'>
-        <nav class='h-24 w-full mx-44 flex justify-between items-center'>
-          <h1 class='font-extrabold text-web-gray  text-3xl'>
-            Diapede
-          </h1>
-          <span class=' font-normal text-web-gray  text-base'>
+    <div class="top-0 z-50 w-full bg-white shadow-lg">
+      <div class="flex flex-shrink-0 justify-center">
+        <nav class="mx-44 flex h-24 w-full items-center justify-between">
+          <h1 class="text-3xl font-extrabold text-web-gray">Diapede</h1>
+          <span class=" text-base font-normal  text-web-gray">
             Copyright © 2025 Diapede | All Rights Reserved
           </span>
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
