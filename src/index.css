@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-. {
+body {
   font-family: "Inter", sans-serif;
+  @apply bg-web-white text-web-dark;
 }
 
 @layer components {
   .forminput {
-    @apply mt-2 block w-full rounded-lg border-2 border-gray-200 text-web-dark shadow-lg hover:border-gray-400 focus:border-gray-400  focus:ring-1 focus:ring-gray-400;
+    @apply mt-2 block w-full rounded-lg border-2 border-gray-200 text-base text-web-dark shadow-lg hover:border-gray-400 focus:border-gray-400  focus:ring-1 focus:ring-gray-400;
   }
   .formlabel {
     @apply block text-base font-semibold text-web-dark;

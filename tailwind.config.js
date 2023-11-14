@@ -18,8 +18,31 @@ export default {
         "web-screen": "75rem",
         "web-30": "32rem",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "2rem",
+          sm: "3rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
     },
   },
+  fontFamily: {
+    sans: ["Inter", "sans-serif"],
+  },
   variants: {},
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), require("daisyui")],
+  daisyui: {
+    themes: false,
+    darkTheme: "light",
+    base: true,
+    styled: true,
+    utils: true,
+    prefix: "",
+    logs: true,
+    themeRoot: ":root",
+  },
 };

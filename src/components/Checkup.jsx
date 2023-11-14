@@ -1,172 +1,196 @@
 import React from "react";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-const Checkup = () => {
+const Checkup = ({ setResponse }) => {
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      kelamin: "Laki-Laki",
+      umur: "",
+      beratBadan: "",
+      tinggi: "",
+      glukosa: "",
+      insulin: "",
+      jumlahKehamilan: "",
+      faktorGenetik: "",
+      tekananDarah: "",
+    },
+  });
+  const onSubmit = async (data) => {
+    console.log(data);
+    const response = {
+      data: data,
+      percentage: 50,
+    };
+    setResponse(response);
+    navigate("/hasil");
+    // try {
+    //   const response = await axios.post("your_backend_api_endpoint", data);
+    //   setResponse(response.data);
+    //   console.log("Response from backend:", response.data);
+    //   navigate("/hasil");
+    // } catch (error) {
+    //   console.error("Error submitting form:", error.message);
+    // }
+  };
+
   return (
-    <div class="h-full bg-hero bg-cover">
-      <div class="h-24"></div>
-      <div class="h-12"></div>
-
-      <div class="mx-44 my-5">
-        <h1 class="mb-6 mt-12 text-5xl font-extrabold text-web-dark">
+    <div className="h-full min-h-screen">
+      <div className="container py-24">
+        <h1 className="mb-6 text-5xl font-extrabold text-web-dark">
           Lengkapi Informasi Anda
         </h1>
-        <p class="font-base mb-12 max-w-2xl text-lg text-web-dark">
+        <p className="font-base mb-12 max-w-2xl text-lg text-web-dark">
           Gunakan informasi yang akurat berdasarkan hasil laboratorium. Data
           yang tidak akurat akan berpengaruh terhadap hasil analisis kami.
         </p>
 
-        <div class="max-w-2xl rounded-2xl bg-web-pure p-12 shadow-xl">
-          <form
-            action="https://formsubmit.co/javierreansyah@gmail.com"
-            method="POST"
-          >
-            <div class="flex gap-10">
-              <div class="flex-1">
-                <label id="kelamin" class="formlabel">
+        <div className="max-w-2xl rounded-2xl bg-web-pure p-12 shadow-xl">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="flex gap-10">
+              <div className="flex-1">
+                <label id="kelamin" className="formlabel">
                   Kelamin
+                  <select
+                    id="kelamin"
+                    {...register("kelamin", { required: "Isi kolom ini!" })}
+                    className="forminput"
+                  >
+                    <option value="Laki-Laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                  </select>
                 </label>
-                <select name="kelamin" class="forminput">
-                  <option value="Laki-Laki">Laki-Laki</option>
-                  <option value="Perempuan">Perempuan</option>
-                </select>
+
+                <p>{errors.kelamin?.message}</p>
               </div>
-              <div class="flex-1">
-                <label id="umur" class="formlabel">
+              <div className="flex-1">
+                <label id="umur" className="formlabel">
                   Umur
+                  <input
+                    id="umur"
+                    {...register("umur", { required: "Isi kolom ini!" })}
+                    type="number"
+                    placeholder="Umur"
+                    className="forminput"
+                  ></input>
                 </label>
-                <input
-                  id="umur"
-                  name="umur"
-                  type="number"
-                  required
-                  placeholder="Umur"
-                  class="forminput"
-                ></input>
+
+                <p>{errors.umur?.message}</p>
               </div>
             </div>
 
-            <div class="flex gap-10">
-              <div class="my-3 flex-1">
-                <label id="berat-badan" class="formlabel">
+            <div className="flex gap-10">
+              <div className="my-3 flex-1">
+                <label id="beratBadan" className="formlabel">
                   Berat Badan kg
+                  <input
+                    id="beratBadan"
+                    {...register("beratBadan", { required: "Isi kolom ini!" })}
+                    type="number"
+                    placeholder="Berat Badan"
+                    className="forminput"
+                  ></input>
                 </label>
-                <input
-                  id="berat-badan"
-                  name="iberat-badan"
-                  type="number"
-                  required
-                  placeholder="Berat Badan"
-                  class="forminput"
-                ></input>
               </div>
-              <div class="my-3 flex-1">
-                <label id="tinggi" class="formlabel">
+              <div className="my-3 flex-1">
+                <label id="tinggi" className="formlabel">
                   Tinggi cm
+                  <input
+                    id="tinggi"
+                    {...register("tinggi", { required: "Isi kolom ini!" })}
+                    type="number"
+                    placeholder="Tinggi Badan"
+                    className="forminput"
+                  ></input>
                 </label>
-                <input
-                  id="tinggi"
-                  name="tinggi"
-                  type="number"
-                  required
-                  placeholder="Tinggi Badan"
-                  class="forminput"
-                ></input>
               </div>
             </div>
 
-            <div class="flex gap-10">
-              <div class="my-3 flex-1">
-                <label id="glukosa" class="formlabel">
+            <div className="flex gap-10">
+              <div className="my-3 flex-1">
+                <label id="glukosa" className="formlabel">
                   Kadar Glukosa Tubuh
+                  <input
+                    id="glukosa"
+                    {...register("glukosa", { required: "Isi kolom ini!" })}
+                    type="number"
+                    placeholder="Kadar Glukosa Tubuh"
+                    className="forminput"
+                  ></input>
                 </label>
-                <input
-                  id="glukosa"
-                  name="glukosa"
-                  type="number"
-                  required
-                  placeholder="Kadar Glukosa Tubuh"
-                  class="forminput"
-                ></input>
               </div>
-              <div class="my-3 flex-1">
-                <label id="insulin" class="formlabel">
+              <div className="my-3 flex-1">
+                <label id="insulin" className="formlabel">
                   Kadar Insulin Tubuh
+                  <input
+                    id="insulin"
+                    {...register("insulin", { required: "Isi kolom ini!" })}
+                    type="number"
+                    placeholder="Kadar Insulin Tubuh"
+                    className="forminput"
+                  ></input>
                 </label>
-                <input
-                  id="insulin"
-                  name="insulin"
-                  type="number"
-                  required
-                  placeholder="Kadar Insulin Tubuh"
-                  class="forminput"
-                ></input>
               </div>
             </div>
 
-            <div class="flex gap-10">
-              <div class="my-3 flex-1">
-                <label id="hamil" class="formlabel">
-                  Hamil
+            <div className="flex gap-10">
+              <div className="my-3 flex-1">
+                <label id="jumlahKehamilan" className="formlabel">
+                  Jumlah Kehamilan
+                  <input
+                    id="jumlahKehamilan"
+                    {...register("jumlahKehamilan", {
+                      required: "Isi kolom ini!",
+                    })}
+                    type="number"
+                    placeholder="Jumlah Kehamilan"
+                    className="forminput"
+                  ></input>
                 </label>
-                <select id="hamil" name="hamil" class="forminput">
-                  <option value="Tidak">Tidak</option>
-                  <option value="Ya">Ya</option>
-                </select>
               </div>
-              <div class="my-3 flex-1">
-                <label id="faktor Genetik" class="formlabel">
+
+              <div className="my-3 flex-1">
+                <label id="faktor Genetik" className="formlabel">
                   Faktor Genetik
+                  <input
+                    id="faktorGenetik"
+                    {...register("faktorGenetik", {
+                      required: "Isi kolom ini!",
+                    })}
+                    type="number"
+                    placeholder="Faktor Genetik"
+                    className="forminput"
+                  ></input>
                 </label>
-                <input
-                  id="faktor Genetik"
-                  name="faktor Genetik"
-                  type="number"
-                  required
-                  placeholder="Faktor Genetik"
-                  class="forminput"
-                ></input>
               </div>
             </div>
 
-            <div class="flex gap-10">
-              <div class="my-3 flex-1">
-                <label id="tekanan Darah" class="formlabel">
+            <div className="flex gap-10">
+              <div className="my-3 flex-1">
+                <label id="tekananDarah" className="formlabel">
                   Tekanan Darah mm/hg
+                  <input
+                    id="tekananDarah"
+                    {...register("tekananDarah", {
+                      required: "Isi kolom ini!",
+                    })}
+                    type="number"
+                    placeholder="Tekanan Darah mm/hg"
+                    className="forminput"
+                  ></input>
                 </label>
-                <input
-                  id="tekanan Darah"
-                  name="tekanan Darah"
-                  type="number"
-                  required
-                  placeholder="Tekanan Darah mm/hg"
-                  class="forminput"
-                ></input>
               </div>
             </div>
-
-            <div class="flex gap-10">
-              <div class="my-3 flex-1">
-                <label id="email" class="formlabel">
-                  Alamat Email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="Email"
-                  class="forminput"
-                ></input>
-              </div>
-            </div>
-            <p class="font-base mb-3 max-w-md text-base text-web-dark">
-              Website kami tidak menyimpan hasil analisis anda. Kami akan
-              mengirimkan hasil analisis melalui email.
-            </p>
             <div>
               <button
                 type="submit"
-                class="mt-2 rounded-lg bg-web-cyan px-3 py-2 text-base font-semibold text-web-pure shadow-sm hover:text-gray-100"
+                className="mt-2 rounded-lg bg-web-cyan px-3 py-2 text-base font-semibold text-web-pure shadow-sm hover:text-gray-100"
               >
                 Kirim
               </button>
@@ -174,9 +198,6 @@ const Checkup = () => {
           </form>
         </div>
       </div>
-      <div class="h-24"></div>
-      <div class="h-24"></div>
-      <div class="h-24"></div>
     </div>
   );
 };

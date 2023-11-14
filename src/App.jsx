@@ -1,18 +1,37 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
-import { Navbar, Heros, Footer, Checkup, Contact } from "./components/index";
+import { Navbar, Heros, Footer, Checkup, Result } from "./components/index";
 
-const App = () => (
-  <>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Heros />} />
-      <Route path="/checkup" element={<Checkup />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
-    <Footer />
-  </>
-);
-
+const App = () => {
+  const [response, setResponse] = useState({
+    data: {
+      beratBadan: "12",
+      faktorGenetik: "12",
+      glukosa: "12",
+      insulin: "12",
+      jumlahKehamilan: "12",
+      kelamin: "Laki-Laki",
+      tekananDarah: "12",
+      tinggi: "12",
+      umur: "12",
+    },
+    percentage: 70,
+  });
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Heros />} />
+        <Route
+          path="/checkup"
+          element={<Checkup setResponse={setResponse} />}
+        />
+        <Route path="/hasil" element={<Result response={response} />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+};
 export default App;
