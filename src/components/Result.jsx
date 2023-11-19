@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Result = ({ response }) => {
-  const percentage = response.percentage;
+  const percentage = response.Percentage;
   return (
     <div className="container min-h-screen space-y-8 py-10 xl:py-24">
       <div className="w-full rounded-lg bg-web-pure shadow-xl xl:flex xl:h-[500px]">

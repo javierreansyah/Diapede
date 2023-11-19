@@ -19,12 +19,6 @@ const Navbar = () => {
           >
             Cek Sekarang
           </Link>
-          <Link
-            to="/hasil"
-            className="rounded-lg bg-web-cyan px-3 py-2 text-sm font-semibold text-web-pure shadow-sm hover:text-gray-100"
-          >
-            Tombol gaguna
-          </Link>
         </nav>
       </div>
       <div className="h-20 w-full"></div>

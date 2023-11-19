@@ -6,18 +6,15 @@ import { Navbar, Heros, Footer, Checkup, Result } from "./components/index";
 
 const App = () => {
   const [response, setResponse] = useState({
-    data: {
-      beratBadan: "12",
-      faktorGenetik: "12",
-      glukosa: "12",
-      insulin: "12",
-      jumlahKehamilan: "12",
-      kelamin: "Laki-Laki",
-      tekananDarah: "12",
-      tinggi: "12",
-      umur: "12",
-    },
-    percentage: 70,
+    beratBadan: 12,
+    faktorGenetik: 12,
+    glukosa: 12,
+    insulin: 12,
+    jumlahKehamilan: 12,
+    tekananDarah: 12,
+    tinggi: 12,
+    umur: 12,
+    Percentage: 70,
   });
   return (
     <>
