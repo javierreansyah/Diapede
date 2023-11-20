@@ -59,9 +59,9 @@ const Checkup = ({ setResponse }) => {
           yang tidak akurat akan berpengaruh terhadap hasil analisis kami.
         </p>
 
-        <div className="max-w-2xl rounded-2xl bg-web-pure p-12 shadow-xl">
+        <div className="w-full max-w-2xl rounded-2xl bg-web-pure p-12 shadow-xl">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="flex gap-10">
+            <div className="gap-10 md:flex">
               <div className="flex-1">
                 <label id="Name" className="formlabel">
                   Nama
@@ -78,15 +78,15 @@ const Checkup = ({ setResponse }) => {
               </div>
             </div>
 
-            <div className="flex gap-10">
+            <div className="gap-10 md:flex">
               <div className="my-3 flex-1">
                 <label id="Age" className="formlabel">
                   Umur
                   <input
                     id="Age"
                     {...register("Age", { required: "Isi kolom ini!" })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Umur"
                     className="forminput"
                   ></input>
@@ -96,15 +96,15 @@ const Checkup = ({ setResponse }) => {
               </div>
             </div>
 
-            <div className="flex gap-10">
+            <div className="gap-10 md:flex">
               <div className="my-3 flex-1">
                 <label id="Weight" className="formlabel">
-                  Berat Badan kg
+                  {"Berat Badan (kg)"}
                   <input
                     id="Weight"
                     {...register("Weight", { required: "Isi kolom ini!" })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Berat Badan"
                     className="forminput"
                   ></input>
@@ -112,12 +112,12 @@ const Checkup = ({ setResponse }) => {
               </div>
               <div className="my-3 flex-1">
                 <label id="Height" className="formlabel">
-                  Tinggi cm
+                  {"Tinggi (cm)"}
                   <input
                     id="Height"
                     {...register("Height", { required: "Isi kolom ini!" })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Tinggi Badan"
                     className="forminput"
                   ></input>
@@ -125,15 +125,15 @@ const Checkup = ({ setResponse }) => {
               </div>
             </div>
 
-            <div className="flex gap-10">
+            <div className="gap-10 md:flex">
               <div className="my-3 flex-1">
                 <label id="Glucose" className="formlabel">
                   Kadar Glukosa Tubuh
                   <input
                     id="Glucose"
                     {...register("Glucose", { required: "Isi kolom ini!" })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Kadar Glukosa Tubuh"
                     className="forminput"
                   ></input>
@@ -141,12 +141,12 @@ const Checkup = ({ setResponse }) => {
               </div>
               <div className="my-3 flex-1">
                 <label id="Insulin" className="formlabel">
-                  Kadar Insulin Tubuh
+                  {"Kadar Insulin Tubuh (U/ml)"}
                   <input
                     id="Insulin"
                     {...register("Insulin", { required: "Isi kolom ini!" })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Kadar Insulin Tubuh"
                     className="forminput"
                   ></input>
@@ -154,7 +154,7 @@ const Checkup = ({ setResponse }) => {
               </div>
             </div>
 
-            <div className="flex gap-10">
+            <div className="gap-10 md:flex">
               <div className="my-3 flex-1">
                 <label id="Pregnancies" className="formlabel">
                   Jumlah Kehamilan
@@ -163,8 +163,8 @@ const Checkup = ({ setResponse }) => {
                     {...register("Pregnancies", {
                       required: "Isi kolom ini!",
                     })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Jumlah Kehamilan"
                     className="forminput"
                   ></input>
@@ -179,8 +179,8 @@ const Checkup = ({ setResponse }) => {
                     {...register("DiabetesPedigreeFunction", {
                       required: "Isi kolom ini!",
                     })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Faktor Genetik"
                     className="forminput"
                   ></input>
@@ -188,32 +188,32 @@ const Checkup = ({ setResponse }) => {
               </div>
             </div>
 
-            <div className="flex gap-10">
+            <div className="gap-10 md:flex">
               <div className="my-3 flex-1">
                 <label id="BloodPressure" className="formlabel">
-                  Tekanan Darah mm/hg
+                  {"Tekanan Darah (mm/hg)"}
                   <input
                     id="BloodPressure"
                     {...register("BloodPressure", {
                       required: "Isi kolom ini!",
                     })}
-                    type="text"
-                    inputMode="decimal"
-                    placeholder="Tekanan Darah mm/hg"
+                    type="number"
+                    step="any"
+                    placeholder="Tekanan Darah mmhg"
                     className="forminput"
                   ></input>
                 </label>
               </div>
               <div className="my-3 flex-1">
                 <label id="SkinThickness" className="formlabel">
-                  Tekanan Darah mm/hg
+                  {"Ketebalan Kulit (mm)"}
                   <input
                     id="SkinThickness"
                     {...register("SkinThickness", {
                       required: "Isi kolom ini!",
                     })}
-                    type="text"
-                    inputMode="decimal"
+                    type="number"
+                    step="any"
                     placeholder="Ketebalan Kulit"
                     className="forminput"
                   ></input>
