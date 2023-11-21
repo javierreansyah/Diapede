@@ -1,7 +1,3 @@
-const olahragaList = [
-  { name: "Jalan Kaki", text: "Jalan kaki bermanfaat xxxxx", img: "gambar" },
-];
-
 const resultFn = (percentage) => {
   if (percentage < 20) {
     return {
