@@ -16,6 +16,7 @@ import kacangAlmond from "../assets/image-photo/kacang-almond.jpg";
 import salmon from "../assets/image-photo/salmon.jpg";
 import tahu from "../assets/image-photo/tahu.jpg";
 import ubiJalar from "../assets/image-photo/ubi-jalar.jpg";
+import bawangPutih from "../assets/image-photo/bawang-putih.jpg";
 
 export const olahragaList = [
   {
@@ -70,6 +71,11 @@ export const makananList = [
     name: "Bayam",
     text: "Sayuran hijau seperti bayam kaya akan serat, vitamin, dan mineral, serta rendah kalori, yang membantu mengontrol kadar gula darah",
     img: bayam,
+  },
+  {
+    name: "Bawang Putih",
+    text: "Bawang putih dapat membantu mengurangi kadar gula darah dan membantu mengatur kadar gula darah",
+    img: bawangPutih,
   },
   {
     name: "Brokoli",
