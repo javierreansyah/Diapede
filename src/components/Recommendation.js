@@ -706,135 +706,77 @@ const makananFn = (age, weight, height, percentage) => {
 const polaHidupFn = (age, weight, height, percentage) => {
   const bmi = bmiFn(weight, height);
   const ageCategory = ageCategoryFn(age);
-  if (percentage < 50) {
-    if (bmi === "underweight" || bmi === "normal") {
-      if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-    }
-    if (bmi === "overweight") {
-      if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-    }
-    if (bmi === "obese") {
-      if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-    }
-  }
   if (percentage < 70) {
     if (bmi === "underweight" || bmi === "normal") {
       if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan kombinasi antara pola makan seimbang dengan porsi yang tepat, aktivitas fisik yang teratur, dan pemantauan gula darah secara rutin. Anak perlu mengonsumsi makanan rendah gula dan karbohidrat sederhana, serta tinggi serat dan protein. Pilihan makanan sebaiknya melibatkan berbagai jenis buah, sayuran, dan sumber protein sehat. Selain itu, aktivitas fisik yang disesuaikan dengan usia harus diperhatikan untuk membantu menjaga berat badan dan mengelola kadar gula darah. Pemantauan secara rutin oleh dokter dan edukasi keluarga tentang manajemen diabetes juga penting untuk mendukung kesehatan anak.";
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan kombinasi antara pola makan seimbang dengan fokus pada karbohidrat kompleks, protein, dan lemak sehat. Aktivitas fisik yang teratur juga diperlukan untuk menjaga kesehatan tubuh dan mengelola kadar gula darah. Penting untuk memonitor gula darah secara teratur, menjaga berat badan ideal, dan menghindari makanan tinggi gula. Konsultasi rutin dengan profesional kesehatan, termasuk dokter dan ahli gizi, dapat membantu merancang rencana pengelolaan diabetes yang efektif sesuai dengan kebutuhan individu.";
       }
       if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan kombinasi antara pola makan seimbang dengan porsi yang terkontrol, aktivitas fisik teratur, dan manajemen stres. Prioritas dalam konsumsi makanan rendah gula, tinggi serat, dan seimbang antara protein, lemak sehat, dan karbohidrat kompleks sangat penting. Olahraga yang sesuai dengan kondisi kesehatan perlu diintegrasikan dalam rutinitas harian, seperti berjalan kaki atau berenang. Pemantauan gula darah secara teratur dan konsultasi dengan tim kesehatan, termasuk dokter dan ahli gizi, dapat membantu dalam merancang rencana manajemen yang efektif. Selain itu, manajemen stres melalui teknik relaksasi seperti meditasi atau yoga dapat mendukung kesehatan secara keseluruhan.";
       }
       if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Porsi makan sebaiknya disesuaikan dengan kebutuhan individu. Aktivitas fisik ringan seperti jalan kaki atau senam dapat membantu menjaga kesehatan jantung dan mengelola kadar gula darah. Monitoring gula darah secara teratur dan konsultasi dengan dokter untuk penyesuaian rencana perawatan sangat penting. Pemeliharaan berat badan yang sehat dan pencegahan cedera juga perlu diperhatikan. Manajemen stres melalui kegiatan seperti meditasi atau bersosialisasi dengan teman-teman juga dapat memberikan dampak positif pada kesejahteraan lansia dengan diabetes.";
       }
     }
     if (bmi === "overweight") {
       if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Anak perlu mengonsumsi makanan rendah gula dan lemak, serta tinggi serat, buah, sayuran, dan protein sehat. Porsi makan perlu diatur agar sesuai dengan kebutuhan tubuh. Aktivitas fisik yang teratur, seperti bermain di luar atau berpartisipasi dalam olahraga ringan, penting untuk membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Pemantauan gula darah secara rutin dan konsultasi dengan tim kesehatan, termasuk dokter dan ahli gizi, dapat membantu mengelola diabetes dengan efektif pada usia dini. Peran keluarga dalam mendukung pola hidup sehat ini juga sangat penting.";
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Memilih makanan rendah gula, lemak jenuh, dan karbohidrat sederhana, serta fokus pada buah, sayuran, protein sehat, dan serat. Porsi makan harus diatur agar sesuai dengan kebutuhan tubuh. Aktivitas fisik teratur, seperti olahraga aerobik atau kegiatan fisik lainnya, diperlukan untuk membantu mengelola berat badan dan meningkatkan kontrol gula darah. Monitoring gula darah secara teratur dan konsultasi dengan profesional kesehatan dapat membantu merancang rencana manajemen diabetes yang efektif. Selain itu, membangun dukungan sosial dan pemahaman tentang pentingnya manajemen diabetes di kalangan teman dan keluarga juga merupakan faktor kunci dalam mencapai gaya hidup sehat.";
       }
       if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return " Prioritas utama adalah konsumsi makanan rendah gula, lemak jenuh, dan karbohidrat sederhana, dengan penekanan pada buah, sayuran, protein sehat, dan serat. Porsi makan perlu diatur agar sesuai dengan kebutuhan tubuh. Aktivitas fisik yang teratur, seperti berjalan kaki, bersepeda, atau latihan aerobik, membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Monitoring gula darah secara rutin dan konsultasi dengan tim kesehatan, termasuk ahli gizi, membantu merancang rencana manajemen diabetes yang efektif. Manajemen stres dan aspek psikososial lainnya juga perlu diperhatikan untuk mendukung kesejahteraan secara keseluruhan.";
       }
       if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Penekanan pada pola makan seimbang dengan mengurangi konsumsi gula, lemak jenuh, dan karbohidrat sederhana. Porsi makan perlu diatur sesuai dengan kebutuhan tubuh. Aktivitas fisik ringan, seperti berjalan atau senam, harus diintegrasikan ke dalam rutinitas harian untuk membantu mengelola berat badan dan meningkatkan kontrol gula darah. Monitoring gula darah secara rutin dan konsultasi dengan dokter dan ahli gizi membantu merancang rencana manajemen diabetes yang tepat. Perawatan kesehatan mental juga penting, termasuk manajemen stres dan perhatian terhadap kesejahteraan psikososial. Keseluruhan, mendukung gaya hidup sehat ini dapat meningkatkan kualitas hidup lansia dengan diabetes.";
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Anak perlu mengonsumsi makanan rendah gula dan lemak, serta tinggi serat, buah, sayuran, dan protein sehat. Porsi makan perlu diatur agar sesuai dengan kebutuhan tubuh. Aktivitas fisik yang teratur, seperti bermain di luar atau berpartisipasi dalam olahraga ringan, penting untuk membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Pemantauan gula darah secara rutin dan konsultasi dengan tim kesehatan, termasuk dokter dan ahli gizi, dapat membantu mengelola diabetes dengan efektif pada usia dini. Peran keluarga dalam mendukung pola hidup sehat ini juga sangat penting.";
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Memilih makanan rendah gula, lemak jenuh, dan karbohidrat sederhana, serta fokus pada buah, sayuran, protein sehat, dan serat. Porsi makan harus diatur agar sesuai dengan kebutuhan tubuh. Aktivitas fisik teratur, seperti olahraga aerobik atau kegiatan fisik lainnya, diperlukan untuk membantu mengelola berat badan dan meningkatkan kontrol gula darah. Monitoring gula darah secara teratur dan konsultasi dengan profesional kesehatan dapat membantu merancang rencana manajemen diabetes yang efektif. Selain itu, membangun dukungan sosial dan pemahaman tentang pentingnya manajemen diabetes di kalangan teman dan keluarga juga merupakan faktor kunci dalam mencapai gaya hidup sehat.";
       }
       if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return " Prioritas utama adalah konsumsi makanan rendah gula, lemak jenuh, dan karbohidrat sederhana, dengan penekanan pada buah, sayuran, protein sehat, dan serat. Porsi makan perlu diatur agar sesuai dengan kebutuhan tubuh. Aktivitas fisik yang teratur, seperti berjalan kaki, bersepeda, atau latihan aerobik, membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Monitoring gula darah secara rutin dan konsultasi dengan tim kesehatan, termasuk ahli gizi, membantu merancang rencana manajemen diabetes yang efektif. Manajemen stres dan aspek psikososial lainnya juga perlu diperhatikan untuk mendukung kesejahteraan secara keseluruhan.";
       }
       if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Penekanan pada pola makan seimbang dengan mengurangi konsumsi gula, lemak jenuh, dan karbohidrat sederhana. Porsi makan perlu diatur sesuai dengan kebutuhan tubuh. Aktivitas fisik ringan, seperti berjalan atau senam, harus diintegrasikan ke dalam rutinitas harian untuk membantu mengelola berat badan dan meningkatkan kontrol gula darah. Monitoring gula darah secara rutin dan konsultasi dengan dokter dan ahli gizi membantu merancang rencana manajemen diabetes yang tepat. Perawatan kesehatan mental juga penting, termasuk manajemen stres dan perhatian terhadap kesejahteraan psikososial. Keseluruhan, mendukung gaya hidup sehat ini dapat meningkatkan kualitas hidup lansia dengan diabetes.";
       }
     }
   }
   if (percentage >= 70) {
     if (bmi === "underweight" || bmi === "normal") {
       if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan pendekatan yang hati-hati terhadap pola makan dan manajemen gula darah. Anak perlu mengonsumsi makanan dengan indeks glikemik rendah, tinggi serat, dan nutrisi esensial untuk mendukung pertumbuhan. Porsi makan perlu ditingkatkan secara bertahap, dengan fokus pada makanan sehat seperti buah, sayuran, dan protein. Konsultasi dengan dokter dan ahli gizi penting untuk merancang rencana makan yang sesuai. Aktivitas fisik yang sesuai dengan usia, seperti bermain di luar atau berpartisipasi dalam kegiatan fisik, dapat membantu meningkatkan nafsu makan dan meningkatkan kesehatan secara keseluruhan. Pemantauan gula darah secara rutin dan dukungan keluarga dalam mengelola diabetes juga sangat krusial untuk kesejahteraan anak.";
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Mencakup penyesuaian pola makan dan gaya hidup. Prioritas utama adalah mengonsumsi makanan rendah gula, lemak jenuh, dan karbohidrat sederhana, dengan penekanan pada buah, sayuran, dan protein sehat. Porsi makan perlu ditingkatkan secara bertahap untuk mencapai berat badan yang sehat. Aktivitas fisik yang teratur, seperti olahraga ringan atau kegiatan fisik lainnya, dapat membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Monitoring gula darah secara rutin dan konsultasi dengan profesional kesehatan, termasuk ahli gizi, penting untuk merancang rencana manajemen diabetes yang efektif. Dukungan sosial dan psikologis dari keluarga dan teman juga merupakan faktor penting dalam mendukung perubahan gaya hidup yang positif.";
       }
       if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan penyesuaian pola makan dan gaya hidup. Fokus utama adalah mengonsumsi makanan rendah gula, lemak jenuh, dan karbohidrat sederhana, dengan penekanan pada buah, sayuran, dan protein sehat. Porsi makan perlu ditingkatkan secara bertahap untuk mencapai berat badan yang sehat. Aktivitas fisik teratur, seperti latihan aerobik dan kegiatan fisik lainnya, membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Monitoring gula darah secara rutin dan konsultasi dengan tim kesehatan, termasuk ahli gizi, mendukung rencana manajemen diabetes yang efektif. Manajemen stres dan dukungan sosial juga penting untuk kesejahteraan secara keseluruhan.";
       }
       if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan penyesuaian pola makan dengan mengonsumsi makanan rendah gula, lemak jenuh, dan karbohidrat sederhana. Porsi makan perlu ditingkatkan untuk mencapai berat badan yang sehat. Aktivitas fisik yang ringan, seperti berjalan atau senam, dapat membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Monitoring gula darah secara rutin dan konsultasi dengan dokter dan ahli gizi mendukung rencana manajemen diabetes yang efektif. Dukungan sosial dari keluarga dan teman serta perhatian terhadap aspek kesehatan mental juga menjadi bagian penting dari gaya hidup sehat pada usia lanjut.";
       }
     }
-    if (bmi === "overweight") {
+    if (bmi === "overweight" || bmi === "obese") {
       if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan perubahan pada pola makan dan gaya hidup. Anak perlu mengonsumsi makanan rendah gula, lemak jenuh, dan karbohidrat sederhana, dengan fokus pada buah, sayuran, dan protein sehat. Porsi makan harus diatur agar sesuai dengan kebutuhan tubuh dan membantu mengelola berat badan. Aktivitas fisik yang teratur, seperti bermain di luar atau berpartisipasi dalam olahraga, penting untuk mendukung kesehatan dan mengendalikan kadar gula darah. Dukungan keluarga dalam menciptakan lingkungan yang sehat dan pemahaman mengenai manajemen diabetes anak sangat krusial untuk mencapai gaya hidup sehat.";
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan perubahan pola makan dengan menghindari makanan tinggi gula, lemak jenuh, dan karbohidrat sederhana. Porsi makan perlu diatur agar sesuai dengan kebutuhan tubuh dan membantu menurunkan berat badan. Aktivitas fisik yang teratur, seperti olahraga atau kegiatan fisik lainnya, penting untuk mengelola berat badan dan meningkatkan sensitivitas insulin. Monitoring gula darah secara rutin dan konsultasi dengan tim kesehatan, termasuk ahli gizi, mendukung rencana manajemen diabetes yang efektif. Dukungan sosial dan pemahaman mengenai pentingnya perubahan gaya hidup juga berperan penting dalam mencapai kesejahteraan secara keseluruhan.";
       }
       if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Mencakup penyesuaian pola makan dengan fokus pada makanan rendah gula, lemak jenuh, dan karbohidrat sederhana. Kontrol porsi makan perlu diperhatikan untuk mengelola berat badan. Aktivitas fisik teratur, seperti olahraga atau kegiatan fisik lainnya, membantu meningkatkan sensitivitas insulin dan kesehatan secara keseluruhan. Monitoring gula darah secara rutin, konsultasi dengan tim kesehatan, dan dukungan psikososial dapat membantu dalam merancang rencana manajemen diabetes yang efektif. Prioritaskan gaya hidup seimbang untuk meningkatkan kesejahteraan dan mengontrol penyakit.";
       }
       if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-    }
-    if (bmi === "obese") {
-      if (ageCategory === "child") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "teen" || ageCategory === "young adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "adult") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
-      }
-      if (ageCategory === "elder") {
-        return "xxxxxxxxxxxxxxxxxxxxxxxx";
+        return "Melibatkan penyesuaian pola makan dengan fokus pada makanan rendah gula, lemak jenuh, dan karbohidrat sederhana. Porsi makan perlu diatur agar sesuai dengan kebutuhan tubuh dan mencapai berat badan yang sehat. Aktivitas fisik yang teratur, seperti berjalan atau senam, membantu mengelola berat badan dan meningkatkan sensitivitas insulin. Monitoring gula darah secara rutin dan konsultasi dengan dokter serta ahli gizi mendukung rencana manajemen diabetes yang efektif. Manajemen stres dan dukungan sosial juga penting untuk kesejahteraan holistik lansia dengan diabetes dan masalah berat badan.";
       }
     }
   }
