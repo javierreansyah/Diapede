@@ -1,3 +1,5 @@
+import list from "./List";
+const listOlahraga = list;
 const resultFn = (percentage) => {
   const paragraph = [];
   if (percentage < 20) {
@@ -53,60 +55,92 @@ const olahragaFn = (age, weight, height, percentage) => {
   if (percentage < 50) {
     if (bmi === "underweight" || bmi === "normal") {
       if (ageCategory === "child") {
-        rec.push("bocil");
+        rec.push(listOlahraga[0]);
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[5]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[0]);
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[5]);
+        rec.push(listOlahraga[6]);
+        rec.push(listOlahraga[7]);
+        rec.push(listOlahraga[8]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
+        rec.push(listOlahraga[8]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
     if (bmi === "overweight") {
       if (ageCategory === "child") {
-        rec.push("renang");
-        rec.push("bersepeda");
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[5]);
+        rec.push(listOlahraga[7]);
+        rec.push(listOlahraga[8]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
-        rec.push("renang");
-        rec.push("bersepeda");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[6]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[4]);
         return rec;
       }
     }
@@ -114,60 +148,91 @@ const olahragaFn = (age, weight, height, percentage) => {
   if (percentage < 70) {
     if (bmi === "underweight" || bmi === "normal") {
       if (ageCategory === "child") {
-        rec.push("bocil");
+        rec.push(listOlahraga[0]);
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[5]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[0]);
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[5]);
+        rec.push(listOlahraga[6]);
+        rec.push(listOlahraga[7]);
+        rec.push(listOlahraga[8]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
     if (bmi === "overweight") {
       if (ageCategory === "child") {
-        rec.push("renang");
-        rec.push("bersepeda");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
-        rec.push("renang");
-        rec.push("bersepeda");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
@@ -175,65 +240,89 @@ const olahragaFn = (age, weight, height, percentage) => {
   if (percentage >= 70) {
     if (bmi === "underweight" || bmi === "normal") {
       if (ageCategory === "child") {
-        rec.push("bocil");
+        rec.push(listOlahraga[0]);
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[5]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[0]);
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[5]);
+        rec.push(listOlahraga[6]);
+        rec.push(listOlahraga[7]);
+        rec.push(listOlahraga[8]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[1]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
     if (bmi === "overweight") {
       if (ageCategory === "child") {
-        rec.push("renang");
-        rec.push("bersepeda");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[2]);
+        rec.push(listOlahraga[3]);
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
-        rec.push("renang");
-        rec.push("bersepeda");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("jalan");
-        rec.push("renang");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap kuda");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("gali kubur");
+        rec.push(listOlahraga[4]);
+        rec.push(listOlahraga[7]);
         return rec;
       }
     }
   }
 };
+
 const makananFn = (age, weight, height, percentage) => {
   const bmi = bmiFn(weight, height);
   const rec = [];
@@ -561,7 +650,7 @@ const polaHidupFn = (age, weight, height, percentage) => {
 const ageCategoryFn = (age) => {
   if (age < 11) return "child";
   if (age < 18) return "teen";
-  if (age < 30) return "young adult";
+  if (age < 40) return "young adult";
   if (age < 60) return "adult";
   return "elder";
 };
