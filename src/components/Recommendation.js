@@ -1,5 +1,9 @@
-import list from "./List";
-const listOlahraga = list;
+import listSport from "./List";
+import listFood from "./List";
+
+const listOlahraga = listSport;
+
+const listMakanan = listFood;
 const resultFn = (percentage) => {
   const paragraph = [];
   if (percentage < 20) {
@@ -330,40 +334,73 @@ const makananFn = (age, weight, height, percentage) => {
   if (percentage < 50) {
     if (bmi === "underweight" || bmi === "normal") {
       if (ageCategory === "child") {
-        rec.push("makanan rendah gula");
+        rec.push(
+          "Anda bisa memakan apa saja asal semua makanan yang Anda makan memiliki nutrisi dan gizi yang baik.",
+        );
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("makanan rendah gula");
-        rec.push("makanan rendah gula");
+        rec.push(
+          "Anda bisa memakan apa saja asal semua makanan yang Anda makan memiliki nutrisi dan gizi yang baik.",
+        );
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("balap makanan rendah gula");
+        rec.push(
+          "Anda bisa memakan apa saja asal semua makanan yang Anda makan memiliki nutrisi dan gizi yang baik.",
+        );
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("makanan rendah gula kubur");
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
         return rec;
       }
     }
     if (bmi === "overweight") {
       if (ageCategory === "child") {
-        rec.push("makanan rendah gula");
-        rec.push("makanan rendah gula");
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
         return rec;
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push("makanan rendah gula");
-        rec.push("makanan rendah gula");
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
         return rec;
       }
       if (ageCategory === "adult") {
-        rec.push("makanan rendah gula");
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
         return rec;
       }
       if (ageCategory === "elder") {
-        rec.push("makanan rendah gula");
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
         return rec;
       }
     }
@@ -666,6 +703,7 @@ const bmiFn = (weight, height) => {
 export const Recommendation = (data) => {
   return {
     summary: resultFn(data.Percentage),
+    // textMakanan: fn()
     olahraga: olahragaFn(data.Age, data.Weight, data.Height, data.Percentage),
     makanan: makananFn(data.Age, data.Weight, data.Height, data.Percentage),
     polaHidup: polaHidupFn(data.Age, data.Weight, data.Height, data.Percentage),
