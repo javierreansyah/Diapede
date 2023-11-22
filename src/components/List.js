@@ -18,7 +18,7 @@ import tahu from "../assets/image-photo/tahu.jpg";
 import ubiJalar from "../assets/image-photo/ubi-jalar.jpg";
 import bawangPutih from "../assets/image-photo/bawang-putih.jpg";
 
-export const olahragaList = [
+const olahragaList = [
   {
     name: "Aerobik",
     text: "Aerobik bermanfaat untuk meningkatkan sirkulasi darah",
@@ -66,7 +66,7 @@ export const olahragaList = [
   },
 ];
 
-export const makananList = [
+const makananList = [
   {
     name: "Bayam",
     text: "Sayuran hijau seperti bayam kaya akan serat, vitamin, dan mineral, serta rendah kalori, yang membantu mengontrol kadar gula darah",
@@ -103,3 +103,5 @@ export const makananList = [
     img: ubiJalar,
   },
 ];
+
+export default { olahragaList, makananList };
