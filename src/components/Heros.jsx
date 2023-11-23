@@ -23,15 +23,15 @@ const Heros = () => {
   const homeCards = [
     {
       title: "Gratis",
-      text: "Diapede, sumber pengetahuan diabetes yang tak hanya gratis, tapi juga memberikan Anda akses ke dunia informasi yang tak ternilai harganya. Kesehatan Anda adalah investasi utama, dan di Diapede, itu dimulai tanpa biaya",
+      text: "Diapede, sumber pengetahuan diabetes yang tak hanya gratis, tapi juga memberikan Anda akses ke dunia informasi yang tak ternilai harganya. Kesehatan Anda adalah investasi utama",
     },
     {
       title: "Cepat",
-      text: "Diapede bukan hanya sumber informasi diabetes yang cepat, tapi juga tempat di mana Anda bisa mendapatkan jawaban instan untuk semua pertanyaan Anda. Tidak perlu menunggu, karena kami tahu waktu Anda berharga.",
+      text: "Diapede bukan hanya sumber informasi diabetes yang cepat, tapi juga tempat di mana Anda bisa mendapatkan jawaban instan untuk semua pertanyaan Anda. Tidak perlu menunggu, karena kami tahu waktu Anda berharga",
     },
     {
       title: "Mudah",
-      text: "Diapede tahu bahwa mengelola diabetes dapat menjadi tantangan. Oleh karena itu, kami hadir dengan panduan yang menyenangkan, rekomendasi olahraga, dan makanan yang lebih mudah dan lebih menyenangkan.",
+      text: "Diapede tahu bahwa mengelola diabetes dapat menjadi tantangan. Oleh karena itu, kami hadir dengan panduan yang menyenangkan, rekomendasi olahraga, dan makanan yang lebih mudah dan lebih menyenangkan",
     },
   ];
   return (
