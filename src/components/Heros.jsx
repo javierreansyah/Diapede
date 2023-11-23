@@ -17,21 +17,21 @@ const Heros = () => {
     },
     { name: "Haikal Thoriq Athaya", title: "Direktur Back End", img: Haikal },
     { name: "Achmad Fauzi Aranda", title: "Direktur Kreatif", img: Fauzi },
-    { name: "Muhammad Herdi Adams", title: "Direktur Humas", img: Herdi },
+    { name: "Muhammad Herdi Adam", title: "Direktur Humas", img: Herdi },
   ];
 
   const homeCards = [
     {
       title: "Gratis",
-      text: "Lorem Lorem oiaeion conaue ncaiunucn icnacnhe jinchjkanhjnbhj KCnhjabehjknachjikn aeujc uiacnu ienui",
+      text: "Diapede, sumber pengetahuan diabetes yang tak hanya gratis, tapi juga memberikan Anda akses ke dunia informasi yang tak ternilai harganya. Kesehatan Anda adalah investasi utama, dan di Diapede, itu dimulai tanpa biaya",
     },
     {
       title: "Cepat",
-      text: "Lorem Lorem oiaeion conaue ncaiunucn icnacnhe jinchjkanhjnbhj KCnhjabehjknachjikn aeujc uiacnu ienui",
+      text: "Diapede bukan hanya sumber informasi diabetes yang cepat, tapi juga tempat di mana Anda bisa mendapatkan jawaban instan untuk semua pertanyaan Anda. Tidak perlu menunggu, karena kami tahu waktu Anda berharga.",
     },
     {
       title: "Mudah",
-      text: "Lorem Lorem oiaeion conaue ncaiunucn icnacnhe jinchjkanhjnbhj KCnhjabehjknachjikn aeujc uiacnu ienui",
+      text: "Diapede tahu bahwa mengelola diabetes dapat menjadi tantangan. Oleh karena itu, kami hadir dengan panduan yang menyenangkan, rekomendasi olahraga, dan makanan yang lebih mudah dan lebih menyenangkan.",
     },
   ];
   return (
@@ -63,7 +63,7 @@ const Heros = () => {
 
       <div className="container py-24">
         <h2 className="mb-12 text-center text-5xl font-extrabold ">
-          Kenapa Jembatan Aroma?
+          Kenapa Diapede?
         </h2>
         <div className="space-y-6 lg:flex lg:gap-10 lg:space-y-0">
           {homeCards.map((card, index) => (
