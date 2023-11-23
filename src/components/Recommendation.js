@@ -67,7 +67,7 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[5]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[0]);
@@ -78,7 +78,7 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[1]);
@@ -87,14 +87,14 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "overweight") {
@@ -104,7 +104,7 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[1]);
@@ -113,42 +113,42 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[5]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
   }
@@ -160,7 +160,7 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[5]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[0]);
@@ -171,20 +171,20 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[1]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "overweight") {
@@ -193,26 +193,26 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "obese") {
@@ -221,26 +221,26 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
   }
@@ -252,7 +252,7 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[5]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[0]);
@@ -263,20 +263,20 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[1]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "overweight") {
@@ -285,46 +285,46 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
   }
@@ -337,22 +337,34 @@ const makananFn = (age, weight, height, percentage) => {
   if (percentage < 50) {
     if (bmi === "underweight" || bmi === "normal") {
       if (ageCategory === "child") {
-        rec.push(
-          "Anda bisa memakan apa saja asal semua makanan yang Anda makan memiliki nutrisi dan gizi yang baik.",
-        );
-        return rec;
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
-        rec.push(
-          "Anda bisa memakan apa saja asal semua makanan yang Anda makan memiliki nutrisi dan gizi yang baik.",
-        );
-        return rec;
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
-        rec.push(
-          "Anda bisa memakan apa saja asal semua makanan yang Anda makan memiliki nutrisi dan gizi yang baik.",
-        );
-        return rec;
+        rec.push(listMakanan[0]);
+        rec.push(listMakanan[1]);
+        rec.push(listMakanan[2]);
+        rec.push(listMakanan[3]);
+        rec.push(listMakanan[4]);
+        rec.push(listMakanan[5]);
+        rec.push(listMakanan[6]);
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -362,7 +374,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "overweight") {
@@ -374,7 +386,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -384,7 +396,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -394,7 +406,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -404,7 +416,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "obese") {
@@ -416,7 +428,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -426,7 +438,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -436,7 +448,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -446,7 +458,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
   }
@@ -469,7 +481,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -479,7 +491,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -489,7 +501,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "overweight") {
@@ -501,7 +513,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -511,7 +523,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -521,7 +533,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -531,7 +543,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "obese") {
@@ -543,7 +555,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -553,7 +565,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -563,7 +575,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -573,7 +585,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
   }
@@ -596,7 +608,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -606,7 +618,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -616,7 +628,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "overweight") {
@@ -628,7 +640,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -638,7 +650,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -648,7 +660,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -658,7 +670,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
     if (bmi === "obese") {
@@ -670,7 +682,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -680,7 +692,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -690,7 +702,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -700,7 +712,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return rec;
+        return { list: rec, text: "Lorem" };
       }
     }
   }
