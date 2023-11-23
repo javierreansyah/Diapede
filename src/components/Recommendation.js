@@ -67,7 +67,10 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[5]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anda direkomendasikan untuk melakukan olahraga aerobik, badminton, berenang, bersepeda, dan jogging. Olahraga ini sangat bermanfaat untuk meningkatkan sirkulasi darah, kesehatan jantung, dan kelincahan Anda, sekaligus membantu pengelolaan gula darah yang efektif.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[0]);
@@ -78,7 +81,10 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anda direkomendasikan untuk melakukan olahraga aerobik, badminton, berenang, bersepeda, jogging, yoga, dan zumba. Kegiatan-kegiatan ini membantu meningkatkan kebugaran kardiovaskular, fleksibilitas, dan ketahanan tubuh. Selain itu, beragam pilihan olahraga ini dapat membantu Anda dalam mengelola kadar gula darah dan menjaga berat badan yang sehat.",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[1]);
@@ -87,14 +93,20 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anda disarankan untuk melakukan badminton, berenang, bersepeda, yoga, dan zumba. Olahraga-olahraga ini efektif untuk menjaga kesehatan jantung, mengurangi stres, dan meningkatkan keseimbangan serta fleksibilitas tubuh.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Bagi Anda yang berusia lanjut dengan risiko diabetes rendah, sangat disarankan untuk melakukan berenang, bersepeda, yoga, dan zumba. Aktivitas-aktivitas ini ringan namun efektif untuk menjaga kebugaran, fleksibilitas, dan keseimbangan, sekaligus memberikan manfaat pada kesehatan mental dan emosional.",
+        };
       }
     }
     if (bmi === "overweight") {
@@ -104,7 +116,10 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anak-anak yang memiliki berat badan lebih disarankan untuk melakukan badminton, berenang, bersepeda, yoga, dan zumba. Kegiatan-kegiatan ini tidak hanya menyenangkan tetapi juga bermanfaat untuk membantu mereka dalam mengelola berat badan dan meningkatkan kebugaran fisik.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[1]);
@@ -113,42 +128,63 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[5]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anda yang berada di usia dewasa, memiliki berat badan lebih, disarankan untuk melakukan berenang, bersepeda, yoga, dan zumba. Olahraga-olahraga ini efektif untuk menurunkan berat badan, meningkatkan kesehatan jantung, serta membantu dalam mengatur kadar gula darah.",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anda direkomendasikan untuk melakukan olahraga badminton, berenang, bersepeda, yoga, dan zumba. Kegiatan-kegiatan ini sangat bermanfaat bagi Anda yang memiliki BMI overweight dan risiko diabetes yang relatif rendah. Badminton, berenang, dan bersepeda adalah olahraga aerobik yang baik untuk meningkatkan kesehatan jantung dan membakar kalori, yang penting dalam manajemen berat badan.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anda yang berada di usia lanjut, dengan BMI menunjukkan overweight dan risiko diabetes di bawah 50%, disarankan untuk melakukan badminton, berenang, bersepeda, yoga, dan zumba. Olahraga-olahraga ini sangat cocok untuk lansia karena tidak terlalu memberikan tekanan pada sendi, namun efektif untuk meningkatkan sirkulasi darah, fleksibilitas, dan keseimbangan. ",
+        };
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Untuk anak-anak yang mengalami obesitas dengan risiko diabetes di bawah 50%, sangat disarankan untuk melakukan yoga dan zumba. Kegiatan-kegiatan ini membantu dalam meningkatkan fleksibilitas, koordinasi, dan keseimbangan, serta memberikan manfaat mental dan emosional yang penting pada usia ini. Yoga dan zumba juga membantu dalam mengembangkan kesadaran tubuh dan kesehatan secara menyenangkan.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Bagi remaja atau dewasa muda yang memiliki BMI kategori obesitas dan risiko diabetes kurang dari 50%, disarankan untuk melakukan yoga dan zumba. Kedua jenis olahraga ini sangat bermanfaat untuk mengurangi stres, meningkatkan kekuatan otot dan fleksibilitas, serta membantu dalam pengelolaan berat badan yang sehat. Mereka juga memberikan efek relaksasi dan membantu dalam fokus dan konsentrasi.",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Dewasa dengan obesitas dan risiko diabetes di bawah 50% dapat mempertimbangkan untuk melakukan yoga dan zumba. Olahraga ini ideal untuk mereka yang membutuhkan aktivitas fisik yang lebih rendah dampaknya tetapi efektif untuk meningkatkan fleksibilitas, kekuatan, dan kesehatan mental. Kedua olahraga ini juga membantu dalam pengelolaan berat badan dan kesehatan jantung",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lansia dengan kondisi obesitas dan risiko diabetes kurang dari 50% sangat disarankan untuk melakukan yoga. Yoga adalah aktivitas fisik yang lembut dan dapat disesuaikan, sehingga cocok untuk usia lanjut. Yoga membantu dalam mempertahankan fleksibilitas, kekuatan, dan keseimbangan, serta memiliki manfaat besar dalam mengurangi stres dan meningkatkan kesejahteraan mental.",
+        };
       }
     }
   }
@@ -160,7 +196,10 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[5]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anak-anak dengan BMI normal atau kurus dan risiko diabetes di bawah 70% disarankan melakukan aerobik, badminton, berenang, bersepeda, dan jogging. Aktivitas-aktivitas ini membantu dalam meningkatkan stamina dan kesehatan jantung, sekaligus menyenangkan dan cocok untuk usia ini",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[0]);
@@ -171,20 +210,29 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Remaja atau dewasa muda dengan BMI normal atau kurus disarankan melakukan aerobik, badminton, berenang, bersepeda, jogging, yoga, dan zumba. Kegiatan ini membantu dalam membangun kekuatan, stamina, dan fleksibilitas.",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[1]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Dewasa dengan BMI normal atau kurus disarankan berenang, bersepeda, yoga, dan zumba. Kegiatan ini membantu dalam menjaga keseimbangan, kekuatan, dan kesehatan mental.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lansia dengan BMI normal atau kurus disarankan melakukan yoga dan zumba. Kegiatan ini membantu dalam mempertahankan fleksibilitas dan keseimbangan.",
+        };
       }
     }
     if (bmi === "overweight") {
@@ -193,26 +241,38 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Untuk anak-anak yang overweight, disarankan berenang, bersepeda, yoga, dan zumba. Kegiatan ini membantu dalam mengelola berat badan dan mengembangkan kekuatan serta fleksibilitas, sambil meminimalisir risiko cedera.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Bagi mereka yang overweight, berenang, bersepeda, yoga, dan zumba adalah pilihan ideal. Aktivitas ini membantu dalam penurunan berat badan, meningkatkan kesehatan jantung, dan mengurangi stres",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Dewasa yang overweight disarankan melakukan berenang, bersepeda, yoga, dan zumba. Olahraga ini membantu dalam menurunkan berat badan dan meningkatkan kesehatan kardiovaskular.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Untuk lansia yang overweight, yoga dan zumba adalah pilihan yang bagus. Aktivitas ini ringan dan membantu dalam menjaga keseimbangan serta fleksibilitas.",
+        };
       }
     }
     if (bmi === "obese") {
@@ -221,26 +281,38 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anak-anak obesitas dengan risiko diabetes di bawah 70% dapat melakukan berenang, bersepeda, yoga, dan zumba. Aktivitas-aktivitas ini aman, efektif untuk meningkatkan kesehatan jantung, dan membantu dalam mengatur berat badan.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Remaja atau dewasa muda obesitas disarankan melakukan berenang, bersepeda, yoga, dan zumba. Aktivitas ini membantu dalam mengurangi beban pada sendi, meningkatkan fleksibilitas, dan mengelola berat badan",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Untuk dewasa obesitas, berenang, bersepeda, yoga, dan zumba sangat disarankan. Kegiatan-kegiatan ini ringan tetapi efektif untuk menjaga kesehatan jantung dan mengelola berat badan.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lansia obesitas disarankan melakukan yoga. Yoga adalah cara yang aman dan efektif untuk meningkatkan fleksibilitas dan keseimbangan, serta mengurangi stres.",
+        };
       }
     }
   }
@@ -252,7 +324,10 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[5]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anak-anak dengan BMI normal atau kurus dan risiko diabetes di atas 70% disarankan melakukan aerobik, badminton, berenang, bersepeda, dan jogging. Kegiatan-kegiatan ini cocok untuk meningkatkan kesehatan jantung dan keseimbangan gula darah, sambil tetap menyenangkan bagi anak-anak.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[0]);
@@ -263,20 +338,29 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[6]);
         rec.push(listOlahraga[7]);
         rec.push(listOlahraga[8]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Remaja atau dewasa muda dengan BMI normal atau kurus dan risiko diabetes di atas 70% disarankan melakukan aerobik, badminton, berenang, bersepeda, jogging, yoga, dan zumba. Olahraga-olahraga ini membantu dalam membangun kekuatan, stamina, dan fleksibilitas, sambil mengelola risiko diabetes.",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[1]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Dewasa dengan BMI normal atau kurus dan risiko diabetes di atas 70% disarankan berenang, bersepeda, yoga, dan zumba. Kegiatan ini membantu dalam menjaga keseimbangan, kekuatan, dan kesehatan kardiovaskular.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lansia dengan BMI normal atau kurus dan risiko diabetes tinggi disarankan melakukan yoga dan zumba. Kegiatan ini membantu dalam mempertahankan fleksibilitas dan keseimbangan, yang penting untuk kesehatan pada usia lanjut.",
+        };
       }
     }
     if (bmi === "overweight") {
@@ -285,46 +369,70 @@ const olahragaFn = (age, weight, height, percentage) => {
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Anak-anak yang overweight disarankan berenang, bersepeda, yoga, dan zumba. Olahraga ini membantu dalam mengatur berat badan dan meningkatkan kesehatan kardiovaskular, yang penting untuk mengelola risiko diabetes.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[2]);
         rec.push(listOlahraga[3]);
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Bagi remaja atau dewasa muda yang overweight, berenang, bersepeda, yoga, dan zumba adalah pilihan yang baik. Kegiatan ini membantu dalam penurunan berat badan dan pengelolaan gula darah, yang penting untuk mengelola risiko diabetes.",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Dewasa yang overweight disarankan melakukan berenang, bersepeda, yoga, dan zumba. Kegiatan ini penting untuk mengelola berat badan dan risiko diabetes yang tinggi.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Untuk lansia yang overweight, yoga dan zumba adalah pilihan yang bagus. Kegiatan ini ringan dan membantu dalam menjaga keseimbangan serta kesehatan kardiovaskular.",
+        };
       }
     }
     if (bmi === "obese") {
       if (ageCategory === "child") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Untuk anak-anak obesitas dengan risiko diabetes tinggi, berenang, bersepeda, yoga, dan zumba adalah pilihan yang tepat. Kegiatan ini memberikan latihan kardiovaskular yang aman dan efektif untuk mengelola berat badan dan gula darah.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Remaja atau dewasa muda obesitas disarankan melakukan berenang, bersepeda, yoga, dan zumba. Olahraga ini membantu mengurangi risiko komplikasi diabetes dengan memperbaiki kesehatan kardiovaskular dan mengelola berat badan.",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Untuk dewasa obesitas dengan risiko diabetes tinggi, berenang, bersepeda, yoga, dan zumba sangat disarankan. Aktivitas ini membantu dalam mengurangi beban pada sendi dan mengelola risiko diabetes.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listOlahraga[4]);
         rec.push(listOlahraga[7]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lansia obesitas dengan risiko diabetes tinggi disarankan melakukan yoga. Yoga adalah cara yang aman dan efektif untuk meningkatkan fleksibilitas dan keseimbangan, serta mengurangi stres.",
+        };
       }
     }
   }
@@ -374,7 +482,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
     if (bmi === "overweight") {
@@ -386,7 +497,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -396,7 +510,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -406,7 +523,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -416,7 +536,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
     if (bmi === "obese") {
@@ -428,7 +551,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -438,7 +564,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -448,7 +577,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -458,7 +590,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
   }
@@ -472,6 +607,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -481,7 +620,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -491,7 +633,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -501,7 +646,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
     if (bmi === "overweight") {
@@ -513,7 +661,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -523,7 +674,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -533,7 +687,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -543,7 +700,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
     if (bmi === "obese") {
@@ -555,7 +715,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -565,7 +728,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -575,7 +741,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -585,7 +754,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
   }
@@ -599,6 +771,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -608,7 +784,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -618,7 +797,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -628,7 +810,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
     if (bmi === "overweight") {
@@ -640,7 +825,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -650,7 +838,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -660,7 +851,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -670,7 +864,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
     if (bmi === "obese") {
@@ -682,7 +879,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -692,7 +892,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -702,7 +905,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -712,7 +918,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return {
+          list: rec,
+          text: "Lorem",
+        };
       }
     }
   }
@@ -799,7 +1008,7 @@ const polaHidupFn = (age, weight, height, percentage) => {
 
 const ageCategoryFn = (age) => {
   if (age < 11) return "child";
-  if (age < 18) return "teen";
+  if (age < 20) return "teen";
   if (age < 40) return "young adult";
   if (age < 60) return "adult";
   return "elder";
