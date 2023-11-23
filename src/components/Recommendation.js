@@ -452,7 +452,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return { list: rec, text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia masih pada kategori anak-anak, sangat penting untuk mempertahankan pola makan sehat guna mendukung kesehatan dan pertumbuhan Anda. Pastikan untuk mengonsumsi makanan yang kaya akan nutrisi seperti sayuran, buah-buahan, dan sumber protein seimbang. Hindari makanan yang tinggi gula dan lemak jenuh, serta perhatikan porsi makan agar tetap sesuai dengan kebutuhan tubuh dalam fase pertumbuhan. Penting juga untuk tetap aktif secara fisik, sehingga dapat mempertahankan berat badan yang sehat dan meningkatkan kondisi kesehatan secara keseluruhan. Jika memiliki pertanyaan lebih lanjut atau perlu bantuan lebih lanjut terkait pola makan, sebaiknya berkonsultasi dengan dokter atau ahli gizi untuk mendapatkan panduan yang lebih spesifik sesuai dengan kebutuhan Anda." };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -462,7 +462,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return { list: rec, text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia remaja, sangat penting untuk tetap memperhatikan pola makan seimbang untuk mendukung kesehatan dan perkembangan tubuh Anda. Pilihlah makanan yang kaya akan nutrisi seperti buah-buahan, sayuran, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari konsumsi makanan tinggi gula dan lemak jenuh, serta pastikan untuk mencukupi kebutuhan cairan dengan minum air yang cukup. Remaja membutuhkan nutrisi yang mencukupi untuk mendukung pertumbuhan dan perkembangan tubuh, sehingga memperhatikan keberagaman dalam jenis makanan dapat membantu memastikan penerimaan nutrisi yang seimbang. Selain itu, tetap aktif secara fisik juga penting untuk memelihara kesehatan secara keseluruhan. Jika Anda memiliki pertanyaan lebih lanjut atau memerlukan panduan spesifik terkait pola makan, disarankan untuk berkonsultasi dengan dokter atau ahli gizi" };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -472,7 +472,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Lorem" };
+        return { list: rec, text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia dewasa, sangat penting untuk menjaga pola makan sehat guna mendukung kesejahteraan dan pencegahan penyakit. Fokus pada konsumsi makanan yang kaya serat, seperti sayuran, buah-buahan, dan biji-bijian utuh, serta memilih sumber protein rendah lemak. Hindari makanan tinggi gula, lemak jenuh, dan garam berlebihan. Perhatikan porsi makan agar tetap seimbang dengan kebutuhan energi harian Anda. Sebaiknya mengonsumsi makanan dengan indeks glikemik rendah untuk menjaga tingkat gula darah tetap stabil. Selain itu, jangan lupakan pentingnya hidrasi yang cukup dengan meminum air secara teratur. Menjaga pola makan yang sehat akan membantu menjaga kesehatan jantung, mengelola berat badan, dan memberikan dukungan optimal bagi tubuh Anda dalam menjalani kehidupan dewasa yang aktif. Jika memiliki pertanyaan lebih lanjut atau memerlukan panduan khusus, sebaiknya konsultasikan dengan dokter atau ahli gizi untuk rekomendasi yang lebih personal." };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -484,7 +484,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia lanjut, penting untuk mempertahankan pola makan yang mendukung kesehatan optimal pada tahap kehidupan ini. Fokus pada konsumsi makanan yang kaya nutrisi, seperti sayuran berwarna-warni, buah-buahan, biji-bijian utuh, dan sumber protein seimbang. Pilihlah makanan yang tinggi serat untuk mendukung pencernaan dan menjaga tingkat gula darah tetap stabil. Hindari makanan olahan tinggi gula dan lemak jenuh serta batasi asupan garam. Penting juga untuk memperhatikan porsi makan agar sesuai dengan kebutuhan energi tubuh pada usia lanjut. Asupan cairan yang cukup juga menjadi faktor kunci, pastikan untuk minum air secara teratur. Sementara itu, berkonsultasilah dengan dokter atau ahli gizi untuk mendapatkan panduan lebih lanjut yang sesuai dengan kebutuhan kesehatan individu Anda pada usia lanjut ini.",
         };
       }
     }
@@ -499,7 +499,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, namun BMI berada pada kategori overweight, dan usia masih dalam kategori anak-anak, penting untuk memberikan perhatian khusus pada pola makan untuk mendukung keseimbangan berat badan sehat. Disarankan untuk mengonsumsi makanan yang kaya akan nutrisi, seperti buah-buahan, sayuran, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari makanan tinggi gula, lemak jenuh, dan makanan olahan. Perhatikan porsi makan agar sesuai dengan kebutuhan tubuh dalam fase pertumbuhan, dan dorong untuk tetap aktif secara fisik. Pilihan makanan sehat dan gaya hidup aktif dapat membantu mencapai berat badan yang sehat pada usia anak-anak, sambil tetap mendukung pertumbuhan dan perkembangan tubuh secara optimal. Jika ada kekhawatiran lebih lanjut atau pertanyaan mengenai pola makan, sebaiknya berkonsultasi dengan dokter atau ahli gizi untuk mendapatkan panduan yang lebih spesifik sesuai dengan kebutuhan anak Anda.",
         };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
@@ -512,7 +512,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, namun BMI berada dalam kategori overweight, dan usia masih pada tahap remaja, sangat penting untuk memperhatikan pola makan guna mencapai berat badan yang sehat dan mendukung kesejahteraan Anda secara keseluruhan. Fokuslah pada konsumsi makanan seimbang yang mengandung nutrisi esensial, termasuk sayuran, buah-buahan, sumber protein tanpa lemak, dan biji-bijian utuh. Batasi asupan makanan tinggi gula, lemak jenuh, dan makanan olahan. Perhatikan porsi makan agar sesuai dengan kebutuhan tubuh Anda dalam fase pertumbuhan. Penting juga untuk tetap aktif secara fisik dan mencari kegiatan yang Anda nikmati untuk membantu menjaga berat badan sehat. Jika Anda memiliki pertanyaan lebih lanjut atau perlu panduan lebih spesifik mengenai pola makan yang sesuai dengan kebutuhan remaja, sebaiknya berkonsultasi dengan dokter atau ahli gizi untuk mendapatkan rekomendasi yang lebih personal dan terarah.",
         };
       }
       if (ageCategory === "adult") {
@@ -525,7 +525,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, meskipun BMI berada pada kategori overweight, dan usia Anda sudah mencapai tahap dewasa, sangat penting untuk fokus pada pola makan sehat guna menjaga keseimbangan berat badan dan mendukung kesehatan secara keseluruhan. Pilihlah makanan yang kaya akan nutrisi seperti sayuran, buah-buahan, sumber protein tanpa lemak, dan biji-bijian utuh. Batasi konsumsi makanan tinggi gula, lemak jenuh, dan hindari makanan olahan yang tinggi kalori. Perhatikan porsi makan agar sesuai dengan kebutuhan energi harian dan pertahankan gaya hidup aktif. Lebih lanjut, pertimbangkan untuk berkonsultasi dengan ahli gizi atau dokter untuk mendapatkan saran yang lebih spesifik mengenai pola makan yang dapat membantu Anda mencapai dan menjaga berat badan yang sehat pada tahap dewasa ini.",
         };
       }
       if (ageCategory === "elder") {
@@ -538,7 +538,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, meskipun BMI berada pada kategori overweight, dan usia Anda telah mencapai tahap lanjut, sangat penting untuk memberikan perhatian khusus pada pola makan untuk mendukung kesehatan jangka panjang. Pilihlah makanan yang kaya akan nutrisi seperti sayuran berwarna-warni, buah-buahan, sumber protein seimbang, dan biji-bijian utuh. Batasi konsumsi makanan tinggi gula dan lemak jenuh, serta hindari makanan olahan yang dapat meningkatkan risiko penyakit terkait usia. Perhatikan porsi makan agar sesuai dengan kebutuhan energi tubuh pada tahap lanjut ini. Penting juga untuk tetap hidrasi dengan minum cukup air setiap hari. Mempertahankan pola makan seimbang ini dapat membantu menjaga berat badan yang sehat dan mendukung kesehatan umum pada usia tua. Untuk rekomendasi yang lebih personal dan terarah, disarankan untuk berkonsultasi dengan dokter atau ahli gizi yang dapat memberikan panduan sesuai dengan kebutuhan kesehatan individu Anda.",
         };
       }
     }
@@ -553,7 +553,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, namun BMI berada dalam kategori obese, dan usia masih pada tahap anak-anak, penting untuk memberikan perhatian khusus pada pola makan guna mencapai berat badan yang sehat dan mendukung kesejahteraan Anda secara holistik. Fokus pada konsumsi makanan yang kaya nutrisi seperti sayuran, buah-buahan, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari makanan tinggi gula, lemak jenuh, serta batasi asupan makanan olahan. Perhatikan porsi makan agar sesuai dengan kebutuhan tubuh dalam fase pertumbuhan. Selain itu, dorong untuk tetap aktif secara fisik dengan melakukan kegiatan yang sesuai untuk anak-anak. Kombinasi pola makan sehat dan aktivitas fisik dapat membantu mencapai dan menjaga berat badan yang sehat. Jika ada kekhawatiran lebih lanjut atau pertanyaan mengenai pola makan, sebaiknya berkonsultasi dengan dokter atau ahli gizi untuk mendapatkan panduan yang lebih spesifik sesuai dengan kebutuhan kesehatan anak Anda.",
         };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
@@ -566,7 +566,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, meskipun BMI berada dalam kategori obese, dan usia Anda masih pada tahap remaja, fokus utama adalah pada perubahan pola makan untuk mencapai berat badan yang sehat dan mendukung kesejahteraan Anda. Prioritaskan konsumsi makanan yang kaya nutrisi seperti sayuran berwarna-warni, buah-buahan, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari makanan tinggi gula, lemak jenuh, serta batasi asupan makanan olahan. Perhatikan porsi makan agar sesuai dengan kebutuhan tubuh dalam fase pertumbuhan remaja. Memilih makanan yang memberikan nutrisi yang cukup tanpa meningkatkan risiko diabetes dapat membantu mengelola berat badan secara efektif. Penting juga untuk menjaga keberagaman dalam jenis makanan dan memprioritaskan keseimbangan nutrisi. Untuk rekomendasi yang lebih spesifik, sebaiknya berkonsultasi dengan dokter atau ahli gizi yang dapat memberikan panduan sesuai dengan kebutuhan kesehatan remaja Anda pada situasi ini.",
         };
       }
       if (ageCategory === "adult") {
@@ -579,7 +579,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, meskipun BMI berada dalam kategori obese, dan usia Anda sudah mencapai tahap dewasa, fokus utama harus diberikan pada perubahan pola makan untuk mencapai berat badan yang sehat dan mendukung kesejahteraan Anda. Pilihlah makanan yang kaya nutrisi seperti sayuran berwarna-warni, buah-buahan, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari makanan tinggi gula, lemak jenuh, serta batasi asupan makanan olahan. Perhatikan porsi makan agar sesuai dengan kebutuhan tubuh dewasa Anda. Jangan lupakan pentingnya mengelola asupan kalori secara keseluruhan dan mempertimbangkan pilihan makanan rendah kalori untuk membantu menurunkan berat badan secara bertahap. Penting juga untuk menjaga keseimbangan nutrisi dan memprioritaskan makanan yang memberikan energi tanpa memberikan beban berlebih pada tubuh. Untuk panduan yang lebih spesifik, sebaiknya berkonsultasi dengan dokter atau ahli gizi yang dapat memberikan rekomendasi makanan yang sesuai dengan kebutuhan kesehatan Anda pada tahap dewasa ini.",
         };
       }
       if (ageCategory === "elder") {
@@ -592,7 +592,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Berdasarkan hasil analisis kesehatan Anda yang menunjukkan persentase risiko diabetes rendah, meskipun BMI berada dalam kategori obese, dan usia Anda telah mencapai tahap lanjut, perubahan dalam pola makan dapat menjadi fokus utama untuk mendukung kesehatan Anda. Prioritaskan konsumsi makanan yang kaya nutrisi seperti sayuran berwarna-warni, buah-buahan, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari makanan tinggi gula, lemak jenuh, serta batasi asupan makanan olahan. Perhatikan porsi makan agar sesuai dengan kebutuhan tubuh pada tahap lanjut ini. Memilih makanan yang memberikan nutrisi yang cukup tanpa meningkatkan risiko diabetes dapat membantu mengelola berat badan secara efektif. Penting juga untuk menjaga keberagaman dalam jenis makanan dan memprioritaskan keseimbangan nutrisi. Untuk rekomendasi yang lebih spesifik mengenai pola makan yang sesuai dengan kebutuhan kesehatan Anda pada usia lanjut ini, sebaiknya berkonsultasi dengan dokter atau ahli gizi.",
         };
       }
     }
