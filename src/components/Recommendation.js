@@ -452,7 +452,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia masih pada kategori anak-anak, sangat penting untuk mempertahankan pola makan sehat guna mendukung kesehatan dan pertumbuhan Anda. Pastikan untuk mengonsumsi makanan yang kaya akan nutrisi seperti sayuran, buah-buahan, dan sumber protein seimbang. Hindari makanan yang tinggi gula dan lemak jenuh, serta perhatikan porsi makan agar tetap sesuai dengan kebutuhan tubuh dalam fase pertumbuhan. Penting juga untuk tetap aktif secara fisik, sehingga dapat mempertahankan berat badan yang sehat dan meningkatkan kondisi kesehatan secara keseluruhan. Jika memiliki pertanyaan lebih lanjut atau perlu bantuan lebih lanjut terkait pola makan, sebaiknya berkonsultasi dengan dokter atau ahli gizi untuk mendapatkan panduan yang lebih spesifik sesuai dengan kebutuhan Anda." };
+        return {
+          list: rec,
+          text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia masih pada kategori anak-anak, sangat penting untuk mempertahankan pola makan sehat guna mendukung kesehatan dan pertumbuhan Anda. Pastikan untuk mengonsumsi makanan yang kaya akan nutrisi seperti sayuran, buah-buahan, dan sumber protein seimbang. Hindari makanan yang tinggi gula dan lemak jenuh, serta perhatikan porsi makan agar tetap sesuai dengan kebutuhan tubuh dalam fase pertumbuhan. Penting juga untuk tetap aktif secara fisik, sehingga dapat mempertahankan berat badan yang sehat dan meningkatkan kondisi kesehatan secara keseluruhan. Jika memiliki pertanyaan lebih lanjut atau perlu bantuan lebih lanjut terkait pola makan, sebaiknya berkonsultasi dengan dokter atau ahli gizi untuk mendapatkan panduan yang lebih spesifik sesuai dengan kebutuhan Anda.",
+        };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
         rec.push(listMakanan[0]);
@@ -462,7 +465,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia remaja, sangat penting untuk tetap memperhatikan pola makan seimbang untuk mendukung kesehatan dan perkembangan tubuh Anda. Pilihlah makanan yang kaya akan nutrisi seperti buah-buahan, sayuran, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari konsumsi makanan tinggi gula dan lemak jenuh, serta pastikan untuk mencukupi kebutuhan cairan dengan minum air yang cukup. Remaja membutuhkan nutrisi yang mencukupi untuk mendukung pertumbuhan dan perkembangan tubuh, sehingga memperhatikan keberagaman dalam jenis makanan dapat membantu memastikan penerimaan nutrisi yang seimbang. Selain itu, tetap aktif secara fisik juga penting untuk memelihara kesehatan secara keseluruhan. Jika Anda memiliki pertanyaan lebih lanjut atau memerlukan panduan spesifik terkait pola makan, disarankan untuk berkonsultasi dengan dokter atau ahli gizi" };
+        return {
+          list: rec,
+          text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia remaja, sangat penting untuk tetap memperhatikan pola makan seimbang untuk mendukung kesehatan dan perkembangan tubuh Anda. Pilihlah makanan yang kaya akan nutrisi seperti buah-buahan, sayuran, sumber protein tanpa lemak, dan biji-bijian utuh. Hindari konsumsi makanan tinggi gula dan lemak jenuh, serta pastikan untuk mencukupi kebutuhan cairan dengan minum air yang cukup. Remaja membutuhkan nutrisi yang mencukupi untuk mendukung pertumbuhan dan perkembangan tubuh, sehingga memperhatikan keberagaman dalam jenis makanan dapat membantu memastikan penerimaan nutrisi yang seimbang. Selain itu, tetap aktif secara fisik juga penting untuk memelihara kesehatan secara keseluruhan. Jika Anda memiliki pertanyaan lebih lanjut atau memerlukan panduan spesifik terkait pola makan, disarankan untuk berkonsultasi dengan dokter atau ahli gizi",
+        };
       }
       if (ageCategory === "adult") {
         rec.push(listMakanan[0]);
@@ -472,7 +478,10 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[4]);
         rec.push(listMakanan[5]);
         rec.push(listMakanan[6]);
-        return { list: rec, text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia dewasa, sangat penting untuk menjaga pola makan sehat guna mendukung kesejahteraan dan pencegahan penyakit. Fokus pada konsumsi makanan yang kaya serat, seperti sayuran, buah-buahan, dan biji-bijian utuh, serta memilih sumber protein rendah lemak. Hindari makanan tinggi gula, lemak jenuh, dan garam berlebihan. Perhatikan porsi makan agar tetap seimbang dengan kebutuhan energi harian Anda. Sebaiknya mengonsumsi makanan dengan indeks glikemik rendah untuk menjaga tingkat gula darah tetap stabil. Selain itu, jangan lupakan pentingnya hidrasi yang cukup dengan meminum air secara teratur. Menjaga pola makan yang sehat akan membantu menjaga kesehatan jantung, mengelola berat badan, dan memberikan dukungan optimal bagi tubuh Anda dalam menjalani kehidupan dewasa yang aktif. Jika memiliki pertanyaan lebih lanjut atau memerlukan panduan khusus, sebaiknya konsultasikan dengan dokter atau ahli gizi untuk rekomendasi yang lebih personal." };
+        return {
+          list: rec,
+          text: "Dengan persentase resiko diabetes yang rendah, BMI dalam kisaran normal, dan usia dewasa, sangat penting untuk menjaga pola makan sehat guna mendukung kesejahteraan dan pencegahan penyakit. Fokus pada konsumsi makanan yang kaya serat, seperti sayuran, buah-buahan, dan biji-bijian utuh, serta memilih sumber protein rendah lemak. Hindari makanan tinggi gula, lemak jenuh, dan garam berlebihan. Perhatikan porsi makan agar tetap seimbang dengan kebutuhan energi harian Anda. Sebaiknya mengonsumsi makanan dengan indeks glikemik rendah untuk menjaga tingkat gula darah tetap stabil. Selain itu, jangan lupakan pentingnya hidrasi yang cukup dengan meminum air secara teratur. Menjaga pola makan yang sehat akan membantu menjaga kesehatan jantung, mengelola berat badan, dan memberikan dukungan optimal bagi tubuh Anda dalam menjalani kehidupan dewasa yang aktif. Jika memiliki pertanyaan lebih lanjut atau memerlukan panduan khusus, sebaiknya konsultasikan dengan dokter atau ahli gizi untuk rekomendasi yang lebih personal.",
+        };
       }
       if (ageCategory === "elder") {
         rec.push(listMakanan[0]);
@@ -609,7 +618,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Anak-anak dengan BMI normal atau kurus dan risiko diabetes di bawah 70% disarankan untuk menjaga pola makan yang seimbang dan mengedepankan nutrisi esensial dalam setiap asupan. Lalu mengonsumsi makanan yang kaya serat seperti sayuran hijau bayam dan brokoli, sumber protein seimbang seperti ikan salmon, tahu untuk mendukung pertumbuhan dan kesehatan yang optimal. Serta memberikan perhatian khusus pada makanan yang mengandung zat besi, kalsium, dan vitamin D seperti tahu yang dapat membantu memenuhi kebutuhan nutrisi selama masa pertumbuhan.",
         };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
@@ -622,7 +631,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Bagi Remaja dengan BMI normal atau kurus serta risiko diabetes di bawah 70% disarankan untuk tetap menjaga pola makan seimbang dan sehat. Hindari makanan cepat saji dan instan yang kurang bergizi. Konsumsi sayuran hijau seperti brokoli dan bayam, kacang-kacangan, bawang putih, dan umbi yang baik untuk penderita diabetes sebagai sumber vitamin, mineral dan antioksidan.",
         };
       }
       if (ageCategory === "adult") {
@@ -635,7 +644,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Untuk usia dewasa dengan BMI normal atau kurus serta risiko diabetes di bawah 70% tetap perlu menjaga gaya hidup sehat. Pola makan seimbang harus dipertahankan, hindari makanan olahan dan cepat saji. Fokus pada konsumsi makanan yang kaya serat seperti sayuran hijau yaitu bayam dan brokoli, kacang-kacangan seperti kacang almond, protein tanpa lemak, dan vitamin pada bawang putih. Hindarilah makanan tinggi lemak jenuh, gula tambahan, dan makanan olahan.",
         };
       }
       if (ageCategory === "elder") {
@@ -648,7 +657,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Lansia dengan BMI normal atau kurus serta risiko diabetes di bawah 70% perlu menjaga kesehatan dengan gizi yang seimbang. Pola makan bergizi perlu dipertahankan dengan mengonsumsi sayuran hijau setiap hari. Karbohidrat kompleks seperti ubi jalar yang direbus dapat menjadi sumber energi yang tepat. Protein nabati seperti kacang almond memberikan manfaat bagi tubuh. Minum air putih cukup dan hindari makanan tinggi lemak atau pedas agar pencernaan lancar.",
         };
       }
     }
@@ -663,7 +672,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Untuk anak-anak dengan BMI overweight serta risiko diabetes di bawah 70% disarankan untuk memilih makanan sehat dan seimbang. Hindari cemilan maupun makanan olahan tinggi gula seperti mie instan. Konsumsi sayuran hijau seperti bayam dan brokoli setiap hari sebagai sumber serat, vitamin dan protein. Karbohidrat bersumber dari ubi jalar. Ikan salmon bisa menjadi pilihan protein.",
         };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
@@ -676,7 +685,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Remaja dengan BMI overweight dan risiko diabetes di bawah 70% disarankan untuk memperhatikan pola makan dengan cerdas. Pilihlah makanan yang memberikan nutrisi optimal seperti sayuran hijau, kacang-kacangan, umbi-umbi yang baik untuk penderita diabetes, dan sumber protein sehat. Hindari makanan olahan tinggi gula dan lemak, serta pilih camilan sehat seperti kacang almond yang rendah lemak.",
         };
       }
       if (ageCategory === "adult") {
@@ -689,7 +698,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Bagi usia dewasa dengan BMI overweight dan risiko diabetes di bawah 70% disarankan untuk melakukan pola makan yang sehat dan seimbang. Fokus pada mengurangi asupan kalori berlebih dan makanan tinggi lemak jenuh. Pilihlah makanan yang rendah lemak, kaya serat, dan mengandung nutrisi penting seperti sayuran bayam, kacang almond, ubi jalar, dan protein tanpa lemak. Serta batasi konsumsi makanan olahan, makanan manis, dan minuman bersoda.",
         };
       }
       if (ageCategory === "elder") {
@@ -702,7 +711,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Lansia dengan BMI overweight dan risiko diabetes di bawah 70% disarankan untuk melakukan pola makan yang sehat guna menjaga kesehatan secara optimal. Hindari makanan berkalori tinggi seperti gorengan dan makanan cepat saji. Konsumsi sayur-sayuran seperti brokoli dan bayam, bawang putih untuk mendapatkan serat, vitamin, serta mineral yang dibutuhkan.",
         };
       }
     }
@@ -717,7 +726,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Untuk anak-anak dengan BMI obese dan risiko diabetes di bawah 70% disarankan untuk merancang pola makan yang mendukung kesehatan optimal. Pilihlah makanan yang kaya akan nutrisi seperti sayur bayam, sayur brokoli, dan sumber protein yang seimbang. Hindari makanan tinggi gula, lemak jenuh, dan karbohidrat olahan. Camilan sehat seperti kacang almond dan ubi jalar dapat menjadi pilihan yang baik.",
         };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
@@ -730,7 +739,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Remaja dengan BMI obese serta risiko diabetes di bawah 70% disarankan untuk mengonsumsi makanan seimbang dan bergizi. Hindari makanan oleh-oleh dan cemilan instan tinggi gula serta lemak. Konsumsi sayuran hijau seperti bayam dan brokoli setiap hari, dan bawang putih untuk vitamin. Pilih karbohidrat seperti ubi jalar. Protein bisa berasal dari kacang-kacangan dan ikan salmon.",
         };
       }
       if (ageCategory === "adult") {
@@ -743,7 +752,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Dewasa dengan BMI obese serta risiko diabetes di bawah 70% disarankan menjalankan pola makan seimbang dan sehat. Hindari makanan siap saji dan cemilan tinggi lemak serta gula. Konsumsilah sayuran hijau, dan protein nabati seperti kacang-kacangan setiap hari. Serta vitamin yang terdapat pada bawang putih dan ubi jalar.",
         };
       }
       if (ageCategory === "elder") {
@@ -756,7 +765,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lorem",
+          text: "Lansia dengan BMI obese dan risiko diabetes di bawah 70% disarankan untuk melakukan pola makan yang sehat guna menjaga kesehatan secara optimal. Prioritaskan konsumsi makanan yang rendah kalori, rendah lemak, dan tinggi serat seperti sayuran hijau, tahu, ubi jalar yang direbus, vitamin pada bawang putih, kacang almond, dan protein tanpa lemak. Hindarilah makanan olahan, makanan manis, minuman berkalori tinggi, serta makanan yang mengandung lemak jenuh. Penting juga untuk memperhatikan ukuran porsi makan dan menghindari makan berlebihan.",
         };
       }
     }
@@ -773,7 +782,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Anak-anak dengan BMI normal atau kurus dan risiko diabetes di atas 70% disarankan untuk memperhatikan faktor makanan. Sebaiknya, dengan mengonsumsi makanan yang rendah gula, rendah lemak, dan tinggi serat. Termasuk dalam pola makan sehat ini adalah sayuran hijau seperti bayam, brokoli, sumber protein rendah lemak seperti ikan salmon dan daging tanpa lemak, serta karbohidrat kompleks seperti ubi jalar. Menghindari makanan yang tinggi gula tambahan dan lemak jenuh dapat membantu menjaga keseimbangan gula darah dan mencegah perkembangan risiko diabetes.",
+          text: "Anak-anak dengan BMI normal atau kurus dan risiko diabetes di atas 70% disarankan untuk memperhatikan faktor makanan. Sebaiknya, dengan mengonsumsi makanan yang rendah gula, rendah lemak, dan tinggi serat. Termasuk dalam pola makan sehat ini adalah sayuran hijau seperti bayam, brokoli, sumber protein rendah lemak seperti ikan salmon dan daging tanpa lemak, protein nabati seperti tahu, serta karbohidrat kompleks seperti ubi jalar. Menghindari makanan yang tinggi gula tambahan dan lemak jenuh dapat membantu menjaga keseimbangan gula darah dan mencegah perkembangan risiko diabetes.",
         };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
@@ -827,7 +836,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Anak-anak dengan BMI overweight dan risiko diabetes di atas 70% disarankan untuk mengonsumsi makanan yang rendah kalori, gula, dan lemak jenuh. Seperti sayuran hijau bayam dan brokoli, sumber protein tanpa lemak seperti ikan, dan kacang-kacangan. Rekomendasi ini didasarkan pada fakta bahwa anak dengan BMI overweight memiliki risiko lebih tinggi untuk terkena diabetes. Hal ini disebabkan karena anak dengan BMI overweight memiliki lebih banyak lemak tubuh, yang dapat meningkatkan produksi dan resistensi insulin.",
+          text: "Anak-anak dengan BMI overweight dan risiko diabetes di atas 70% disarankan untuk mengonsumsi makanan yang rendah kalori, gula, dan lemak jenuh. Seperti sayuran hijau bayam dan brokoli, sumber protein tanpa lemak  dan nabati seperti ikan, tahu, dan kacang-kacangan. Rekomendasi ini didasarkan pada fakta bahwa anak dengan BMI overweight memiliki risiko lebih tinggi untuk terkena diabetes. Hal ini disebabkan karena anak dengan BMI overweight memiliki lebih banyak lemak tubuh, yang dapat meningkatkan produksi dan resistensi insulin.",
         };
       }
       if (ageCategory === "teen" || ageCategory === "young adult") {
@@ -853,7 +862,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Bagi usia dewasa dengan BMI risiko diabetes di atas 70% disarankan untuk mengurangi asupan makanan berkalori tinggi dan mengkonsumsi makanan yang mengandung serat tinggi. Hindari makanan olahan, gula tambahan, dan minyak yang tidak sehat. Fokus pada asupan sayuran hijau seperti bayam dan brokoli, kacang almond, dan ubi jalar sebagai sumber karbohidrat sehat.",
+          text: "Bagi usia dewasa dengan BMI overweight risiko diabetes di atas 70% disarankan untuk mengurangi asupan makanan berkalori tinggi dan mengkonsumsi makanan yang mengandung serat tinggi. Hindari makanan olahan, gula tambahan, dan minyak yang tidak sehat. Fokus pada asupan sayuran hijau seperti bayam dan brokoli, kacang almond, dan ubi jalar sebagai sumber karbohidrat sehat, dan bawang putih sebagai vitamin.",
         };
       }
       if (ageCategory === "elder") {
@@ -866,7 +875,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Lansia dengan BMI overweight dan risiko diabetes di atas 70% disarankan untuk melakukan pola makan yang khusus untuk usia lanjut. Disarankan untuk mengonsumsi makanan-makanan yang sehat dan bergizi untuk menjaga berat badan serta kadar gula darahnya. Beberapa makanan yang dapat direkomendasikan adalah sayuran hijau seperti bayam dan brokoli, tahu, ubi jalar, ikan salmon yang kaya serat serta vitamin dan mineral untuk mendukung sistem pencernaan dan kekebalan tubuh.",
+          text: "Lansia dengan BMI overweight dan risiko diabetes di atas 70% disarankan untuk melakukan pola makan yang khusus untuk usia lanjut. Disarankan untuk mengonsumsi makanan-makanan yang sehat dan bergizi untuk menjaga berat badan serta kadar gula darahnya. Beberapa makanan yang dapat direkomendasikan adalah sayuran hijau seperti bayam dan brokoli, tahu, ubi jalar, ikan salmon, dan bawang putih yang kaya serat serta vitamin dan mineral untuk mendukung sistem pencernaan dan kekebalan tubuh.",
         };
       }
     }
@@ -894,7 +903,7 @@ const makananFn = (age, weight, height, percentage) => {
         rec.push(listMakanan[6]);
         return {
           list: rec,
-          text: "Remaja dengan BMI obese dan risiko diabetes di atas 70% disarankan untuk mengurangi asupan makanan berkalori tinggi dan meningkatkan asupan sayuran serta buah-buahan. Makanan-makanan yang dianjurkan untuk dikonsumsi adalah sayuran hijau seperti brokoli dan bayam karena rendah kalori namun tinggi serat dan vitamin.",
+          text: "Remaja dengan BMI obese dan risiko diabetes di atas 70% disarankan untuk mengurangi asupan makanan berkalori tinggi dan meningkatkan asupan sayuran serta buah-buahan. Makanan-makanan yang dianjurkan untuk dikonsumsi adalah sayuran hijau seperti brokoli dan bayam karena rendah kalori namun tinggi serat dan vitamin pada tahu dan bawang putih.",
         };
       }
       if (ageCategory === "adult") {
