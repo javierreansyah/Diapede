@@ -34,7 +34,7 @@ const Result = ({ response }) => {
       </div>
       <h1 className="pt-4 text-5xl font-extrabold">Rekomendasi</h1>
       <h2 className="text-3xl font-bold">Olahraga</h2>
-      <p>{recommendation.olahraga.text}</p>
+      <p className="w-full xl:w-1/2">{recommendation.olahraga.text}</p>
       <div className="w-full rounded-lg xl:flex">
         <div className="grid grid-cols-1 justify-between gap-10 md:grid-cols-2 xl:grid-cols-3">
           {recommendation.olahraga.list.map((sport, index) => (
@@ -52,7 +52,7 @@ const Result = ({ response }) => {
         </div>
       </div>
       <h2 className="text-3xl font-bold">Makanan</h2>
-      <p>{recommendation.makanan.text}</p>
+      <p className="w-full xl:w-1/2">{recommendation.makanan.text}</p>
       <div className="w-full rounded-lg xl:flex">
         <div className="grid grid-cols-1 justify-between gap-10 md:grid-cols-2 xl:grid-cols-3">
           {recommendation.makanan.list.map((food, index) => (
@@ -70,7 +70,7 @@ const Result = ({ response }) => {
         </div>
       </div>
       <h2 className="text-3xl font-bold">Pola Hidup</h2>
-      <p className="max-w-3xl rounded-xl bg-web-pure p-4">
+      <p className="w-full rounded-xl bg-web-pure p-4 xl:w-1/2">
         {recommendation.polaHidup}
       </p>
     </div>
