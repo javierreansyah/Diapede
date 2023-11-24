@@ -55,7 +55,7 @@ const Result = ({ response }) => {
             {percentage}%
           </div>
         </div>
-        <div className="space-y-4 p-12 xl:h-auto xl:w-3/5">
+        <div className="space-y-4 p-7 md:p-12 xl:h-auto xl:w-3/5">
           <h1 className="text-4xl font-extrabold">
             {recommendation.summary.category}
           </h1>
