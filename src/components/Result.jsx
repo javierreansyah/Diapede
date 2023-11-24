@@ -49,8 +49,6 @@ const Result = ({ response }) => {
             className="radial-progress bg-web-pure text-5xl font-black text-web-cyan shadow-xl"
             style={{
               "--value": percentage,
-              "--size": "18rem",
-              "--thickness": "2.2rem",
             }}
             role="progressbar"
           >
