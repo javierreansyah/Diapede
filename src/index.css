@@ -23,7 +23,7 @@ body {
 
 @media (max-width: 768px) {
   .radial-progress {
-    --size: 14rem;
-    --thickness: 1.6rem;
+    --size: 12rem;
+    --thickness: 1.5rem;
   }
 }

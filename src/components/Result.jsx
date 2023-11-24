@@ -46,7 +46,7 @@ const Result = ({ response }) => {
       <div className="w-full overflow-hidden rounded-xl bg-web-pure shadow-xl xl:flex xl:min-h-[500px]">
         <div className="flex items-center justify-center bg-gray-100 p-8 xl:w-2/5">
           <div
-            className="radial-progress bg-web-pure text-5xl font-black text-web-cyan shadow-xl"
+            className="radial-progress bg-web-pure text-4xl font-black text-web-cyan shadow-xl md:text-5xl"
             style={{
               "--value": percentage,
             }}
@@ -108,8 +108,8 @@ const Result = ({ response }) => {
           <p className="text-center font-medium text-gray-400">Tekanan Darah</p>
         </div>
       </div>
-      <h1 className="pt-4 text-5xl font-extrabold">Rekomendasi</h1>
-      <h2 className="text-3xl font-bold">Olahraga</h2>
+      <h1 className="pt-4 text-3xl font-extrabold md:text-5xl">Rekomendasi</h1>
+      <h2 className="text-2xl font-bold md:text-3xl">Olahraga</h2>
       <p className="w-full xl:w-1/2">{recommendation.olahraga.text}</p>
       <div className="w-full rounded-lg xl:flex">
         <div className="grid grid-cols-1 justify-between gap-10 md:grid-cols-2 xl:grid-cols-3">
@@ -127,7 +127,7 @@ const Result = ({ response }) => {
           ))}
         </div>
       </div>
-      <h2 className="text-3xl font-bold">Makanan</h2>
+      <h2 className="text-2xl font-bold md:text-3xl">Makanan</h2>
       <p className="w-full xl:w-1/2">{recommendation.makanan.text}</p>
       <div className="w-full rounded-lg xl:flex">
         <div className="grid grid-cols-1 justify-between gap-10 md:grid-cols-2 xl:grid-cols-3">
@@ -145,7 +145,7 @@ const Result = ({ response }) => {
           ))}
         </div>
       </div>
-      <h2 className="text-3xl font-bold">Pola Hidup</h2>
+      <h2 className="text-2xl font-bold md:text-3xl">Pola Hidup</h2>
       <p className="w-full xl:w-1/2">{recommendation.polaHidup}</p>
     </div>
   );

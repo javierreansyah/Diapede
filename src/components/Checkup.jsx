@@ -59,7 +59,7 @@ const Checkup = ({ setResponse }) => {
           yang tidak akurat akan berpengaruh terhadap hasil analisis kami.
         </p>
 
-        <div className="w-full max-w-2xl rounded-2xl bg-web-pure p-12 shadow-xl">
+        <div className="w-full max-w-2xl md:rounded-2xl md:bg-web-pure md:p-12 md:shadow-xl">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="gap-10 md:flex">
               <div className="flex-1">
