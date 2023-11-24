@@ -5,7 +5,7 @@ import Javier from "../assets/images/javier.jpg";
 import Fauzi from "../assets/images/fauzi.jpg";
 import Herdi from "../assets/images/herdi.jpg";
 import Haikal from "../assets/images/haikal.jpg";
-import Indra from "../assets/images/kucing.jpg";
+import Indra from "../assets/images/indra.jpeg";
 
 const Heros = () => {
   const members = [
