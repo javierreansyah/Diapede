@@ -11,16 +11,16 @@ const Checkup = ({ setResponse }) => {
     formState: { errors },
   } = useForm({
     defaultValues: {
-      Name: "Pak Wo",
-      Pregnancies: "6",
-      Glucose: "148",
-      BloodPressure: "72",
-      SkinThickness: "35",
-      Insulin: "0",
-      Height: "170",
-      Weight: "90",
-      DiabetesPedigreeFunction: "0.627",
-      Age: "50",
+      Name: "",
+      Pregnancies: "",
+      Glucose: "",
+      BloodPressure: "",
+      SkinThickness: "",
+      Insulin: "",
+      Height: "",
+      Weight: "",
+      DiabetesPedigreeFunction: "",
+      Age: "",
     },
   });
   const onSubmit = async (data) => {
@@ -91,8 +91,6 @@ const Checkup = ({ setResponse }) => {
                     className="forminput"
                   ></input>
                 </label>
-
-                <p>{errors.umur?.message}</p>
               </div>
             </div>
 

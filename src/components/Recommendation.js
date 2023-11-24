@@ -2,11 +2,6 @@ import List from "./List";
 
 const listOlahraga = List.olahragaList;
 const listMakanan = List.makananList;
-
-console.log(listOlahraga);
-console.log(listMakanan);
-
-console.log(listOlahraga[0]);
 const resultFn = (percentage) => {
   const paragraph = [];
   if (percentage < 20) {
