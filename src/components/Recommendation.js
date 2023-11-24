@@ -1029,7 +1029,6 @@ const bmiFn = (weight, height) => {
 export const Recommendation = (data) => {
   return {
     summary: resultFn(data.Percentage),
-    // textMakanan: fn()
     olahraga: olahragaFn(data.Age, data.Weight, data.Height, data.Percentage),
     makanan: makananFn(data.Age, data.Weight, data.Height, data.Percentage),
     polaHidup: polaHidupFn(data.Age, data.Weight, data.Height, data.Percentage),
