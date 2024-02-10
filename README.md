@@ -6,4 +6,6 @@ Diapede (Diabetes Helper Detection) is a web application designed to provide ear
 - HTML, CSS, JavaScript
 - Vite, React, Tailwind
 
+Backend currently offline.
+
 
