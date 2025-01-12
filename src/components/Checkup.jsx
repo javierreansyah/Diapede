@@ -24,6 +24,7 @@ const Checkup = ({ setResponse }) => {
     },
   });
   const onSubmit = async (data) => {
+    // Convert form inputs to numeric values
     data.Age = parseFloat(data.Age);
     data.Weight = parseFloat(data.Weight);
     data.Height = parseFloat(data.Height);
@@ -34,17 +35,24 @@ const Checkup = ({ setResponse }) => {
     data.BloodPressure = parseFloat(data.BloodPressure);
     data.SkinThickness = parseFloat(data.SkinThickness);
 
-    console.log(data);
     try {
       const response = await axios.post(
         "https://django-rest-starter-production-ae73.up.railway.app/diabetes/",
         data,
       );
-      setResponse(response.data.Data);
-      console.log(response.data);
+      // Combine the form data with the backend response
+      const combinedResponse = { ...response.data.Data, ...data };
+      setResponse(combinedResponse);
+      console.log(combinedResponse);
       navigate("/hasil");
     } catch (error) {
-      console.error(error.message);
+      console.error("Error fetching data from backend:", error.message);
+
+      // Provide a default response and combine with the form data
+      const defaultResponse = { Percentage: 70 };
+      const combinedResponse = { ...defaultResponse, ...data };
+      setResponse(combinedResponse);
+      navigate("/hasil");
     }
   };
 
@@ -54,6 +62,11 @@ const Checkup = ({ setResponse }) => {
         <h1 className="mb-6 text-5xl font-extrabold text-web-dark">
           Lengkapi Informasi Anda
         </h1>
+        <p className="text-xl font-bold text-web-cyan">PERTHATIAN!</p>
+        <p className="max-w-2xl pb-6 pt-2 text-lg">
+          Saat ini server backend sedang tidak aktif. Maka hasil hanya berupa
+          nilai default tanpa dari perhitungan input.
+        </p>
         <p className="font-base mb-12 max-w-2xl text-lg text-web-dark">
           Gunakan informasi yang akurat berdasarkan hasil laboratorium. Data
           yang tidak akurat akan berpengaruh terhadap hasil analisis kami.
